@@ -1,0 +1,32 @@
+/* Projects.module.css */
+
+.projects {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #282c34;
+
+  }
+  
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .projects .project {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .projects .project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:white;
+  }
+  
+  .projects .project p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
