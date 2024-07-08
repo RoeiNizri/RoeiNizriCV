@@ -12,25 +12,20 @@
     margin: 0 auto;
   }
   
-  .header h1 {
-    font-size: 5rem;
-    margin-bottom: 10px;
+  .header h1, .header h2, .header p {
+    opacity: 0;
+    color: white;
+  }
+  
+  .animate h1 {
     animation: fadeIn 2s forwards;
   }
   
-  .header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: white;
-    opacity: 0;
+  .animate h2 {
     animation: slideIn 1.5s forwards 1s;
   }
   
-  .header p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    opacity: 0;
+  .animate p {
     animation: fadeIn 2s forwards 1.5s;
   }
   
