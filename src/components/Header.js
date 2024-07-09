@@ -13,11 +13,13 @@ const Header = () => {
         <h1>Ran Polac</h1>
         <h2>B.Sc Information Systems Engineering Student</h2>
         <p>
-          A team player with a can-do attitude. Highly passionate about technology and programming.
-          Eager to explore new fields and improve existing skills. Experienced in leading teams and
-          working under pressure.
+        A team player with a can-do attitude, proficient in Python,Excel,SQL and PowerBI. 
+        Highly passionate about technology and programming,
+         with experience leading teams and delivering under pressure. Eager to explore new fields and enhance existing skills.
+         Ready to prove myself in the next step of my life. 
+         
         </p>
-        <p>Seeking junior positions in relevant fields, available 5 days a week.</p>
+        <p>Seeking any positions in related fields, available 5 days a week.</p>
       </div>
     </header>
   );

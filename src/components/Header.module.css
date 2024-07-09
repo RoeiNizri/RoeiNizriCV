@@ -12,17 +12,13 @@
     margin: 0 auto;
   }
   
-  .header h1, .header h2, .header p {
+  .header h1, .header p {
     opacity: 0;
     color: white;
   }
   
   .animate h1 {
     animation: fadeIn 2s forwards;
-  }
-  
-  .animate h2 {
-    animation: slideIn 1.5s forwards 1s;
   }
   
   .animate p {

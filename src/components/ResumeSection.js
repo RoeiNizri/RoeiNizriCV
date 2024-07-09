@@ -7,6 +7,7 @@ const listStyle = {
 
 const itemStyle = {
   marginBottom: '10px',
+  color: 'black', // Add white color to each list item
 };
 
 const ResumeSection = () => (
