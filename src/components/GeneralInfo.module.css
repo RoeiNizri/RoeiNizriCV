@@ -1,0 +1,34 @@
+/* GeneralInfo.module.css */
+
+.general {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #282c34;
+}
+
+.general h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white; /* Light blue color for h2 */
+}
+
+.general .section {
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #3b3f47; /* Slightly lighter background for sections */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.general .section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* White color for h3 */
+}
+
+.general .section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #d1d1d1; /* Light grey color for paragraphs */
+}

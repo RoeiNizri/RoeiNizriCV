@@ -4,6 +4,7 @@ import Projects from '../components/Projects';
 const ProjectsPage = () => (
   <div>
     <Projects />
+    
   </div>
 );
 
