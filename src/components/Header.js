@@ -4,9 +4,11 @@ import styles from './Header.module.css';
 const Header = () => {
   useEffect(() => {
     const header = document.querySelector(`.${styles.header}`);
-    setTimeout(() => {
-      header.classList.add(styles.animate);
-    }, 0);
+    if (header) {
+      setTimeout(() => {
+        header.classList.add(styles.animate);
+      }, 100); // Add a slight delay to ensure content is rendered
+    }
   }, []);
 
   return (
