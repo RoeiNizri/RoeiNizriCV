@@ -5,9 +5,13 @@ const Header = () => {
   useEffect(() => {
     const header = document.querySelector(`.${styles.header}`);
     if (header) {
+      console.log("Header element found. Applying animation class...");
       setTimeout(() => {
         header.classList.add(styles.animate);
-      }, 100); // Add a slight delay to ensure content is rendered
+        console.log("Animation class applied.");
+      }, 100); // Slight delay to ensure content is rendered
+    } else {
+      console.log("Header element not found.");
     }
   }, []);
 
