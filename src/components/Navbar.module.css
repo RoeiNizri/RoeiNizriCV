@@ -58,6 +58,10 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
   .navbar ul {
     flex-direction: column;
     width: 100%;
@@ -71,8 +75,9 @@
   }
 
   .navbar ul li a {
-    padding: 10px;
+    padding: 20px; /* Increase padding for larger touch area */
     border-bottom: 1px solid #444;
+    font-size: 1.2rem; /* Increase font size */
   }
 
   .navbar ul.active {
@@ -81,6 +86,7 @@
 
   .navbar-toggle {
     display: block;
+    font-size: 2rem; /* Increase the toggle button size */
   }
 }
 
