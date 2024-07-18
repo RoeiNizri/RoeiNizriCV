@@ -7,22 +7,28 @@ const Skills = () => (
       <h2>Skills</h2>
       <ul className={styles.skillList}>
         <li>
-          <strong>Programming Languages:</strong> proficient in Python, C, Java (OOP), and JavaScript.
+          <strong>Programming Languages:</strong> C, C#, Java, JavaScript, SQL, Python, Assembly.
         </li>
         <li>
-          <strong>Web Development:</strong> skilled with building web applications using HTML, CSS, React, and Node.js.
+          <strong>Web Development:</strong> HTML, CSS, React, Node.js.
         </li>
         <li>
-          <strong>Database Management:</strong> familiar with SQL, MySQL, and noSQL databases.
+          <strong>Database Management:</strong> MongoDB, SQL.
         </li>
         <li>
-          <strong>Software Architecture:</strong> knowledgeable in OPM, UML, and ERD with expertise in characterizing systems optimally to meet customer needs.
+          <strong>Artificial Intelligence & Machine Learning:</strong> Implemented algorithms and projects involving AI and ML.
         </li>
         <li>
-          <strong>Development Skills:</strong> skilled in using Git, Excel, and Power BI for project management.
+          <strong>Graphics Programming:</strong> OpenGL, developed interactive and graphical applications.
         </li>
         <li>
-          <strong>Problem Solving:</strong> ability to analyze complex problems and develop effective solutions.
+          <strong>Software Development:</strong> Expertise in developing full-stack applications, managing projects using Git, Excel, and Power BI.
+        </li>
+        <li>
+          <strong>Problem Solving:</strong> Ability to analyze complex problems and develop effective solutions.
+        </li>
+        <li>
+          <strong>Soft Skills:</strong> Problem-solving, Communication, Teamwork, Attention to detail, Prioritization.
         </li>
       </ul>
     </div>

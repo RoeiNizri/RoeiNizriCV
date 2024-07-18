@@ -1,32 +1,75 @@
-/* Projects.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .projects {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #282c34;
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffeb3b -300%, #000000 175%);
+  margin-top: 50px; /* Adjust this value as needed to move the section down */
+}
 
-  }
-  
-  .projects h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  .projects .project {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .projects .project h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color:white;
-  }
-  
-  .projects .project p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffeb3b;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.projects h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ffeb3b;
+  margin: 8px auto 0;
+}
+
+.projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.projects .project {
+  background: #282c34;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projects .project h3 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: #ffeb3b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.projects .project p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #d3d3d3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.projects .project a {
+  color: #ffeb3b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.projects .project a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}

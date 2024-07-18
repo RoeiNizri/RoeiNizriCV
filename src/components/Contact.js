@@ -5,7 +5,7 @@ import profilePicture from '../RoeiNizriImg.jpg'; // Adjusted path to src folder
 const Contact = () => (
   <section className={styles.contact}>
     <div className={styles.container}>
-      <h2>Contact</h2>
+      <h2>Let's Get in Touch</h2>
       <img src={profilePicture} alt="Profile" className={styles['profile-picture']} />
       <div className={styles.contactInfo}>
         <p><strong>Email:</strong> <a href="mailto:roeinizri1@gmail.com">roeinizri1@gmail.com</a></p>
