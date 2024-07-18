@@ -1,6 +1,5 @@
 {
-  "homepage": "https://Ranash12P.github.io/RanResume",
-
+  "homepage": "https://RoeiNizri.github.io/RoeiNizri-Cv",
   "name": "my-online-resume",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +20,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-   
   },
   "eslintConfig": {
     "extends": [
