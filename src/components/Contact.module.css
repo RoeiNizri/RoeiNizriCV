@@ -1,56 +1,55 @@
-/* Contact.module.css */
-
-/* Existing styles */
-
 .contact {
-    background-color: #454c59;
-    padding: 40px 20px;
-    text-align: center;
-    min-height: 100vh; /* Make sure the section takes full height of the viewport */
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #282c34; /* White background for the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    border-radius: 10px; /* Rounded corners */
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: white; /* Darker text color */
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-  }
-  
-  p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    line-height: 1.6;
-    color: white; /* Medium text color */
-  }
-  
-  a {
-    color: #0073b1; /* LinkedIn blue */
-    text-decoration: none;
-    transition: color 0.3s ease; /* Smooth color transition */
-  }
-  
-  a:hover {
-    color: #005582; /* Darker blue on hover */
-    text-decoration: underline;
-  }
-  
-  /* New styles for the profile picture */
-  
+  background-color: #f9f9f9;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.contactInfo {
+  font-size: 1.2em;
+}
+
+.contactInfo p {
+  margin: 0.5em 0;
+}
+
+.contactInfo a {
+  color: #0073b1; /* LinkedIn color */
+  text-decoration: none;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
   .profile-picture {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Adjust the size as needed */
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image covers the entire circle */
-    margin: 20px 0; /* Add some space around the image */
+    width: 100px;
+    height: 100px;
   }
-  
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .contactInfo {
+    font-size: 1em;
+  }
+}
