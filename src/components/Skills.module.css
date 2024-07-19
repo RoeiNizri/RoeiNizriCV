@@ -3,7 +3,7 @@
 .skills {
   padding: 60px 20px;
   text-align: center;
-  background: linear-gradient(135deg, #ffeb3b -300%, #000000 175%);
+  background: linear-gradient(135deg, #000000 0%, #ffeb3b 100%);
   margin-top: 50px; /* Adjust this value as needed to move the section down */
 }
 

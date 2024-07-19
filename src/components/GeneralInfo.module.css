@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .general {
-  background: linear-gradient(135deg, #ffeb3b -300%, #000000 175%);
+  background: linear-gradient(135deg, #000000 0%, #ffeb3b 100%);
   padding: 60px 20px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;

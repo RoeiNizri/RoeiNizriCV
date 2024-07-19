@@ -3,14 +3,14 @@
 .header {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(135deg, #ffeb3b -300%, #000000 175%);
+  min-height: 100vh; /* Changed from height to min-height */
+  background: linear-gradient(135deg, #000000 0%, #ffeb3b 100%);
   color: white;
   overflow: hidden;
   text-align: center;
   padding: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 50px; /* Adjust this value as needed to move the section down */
+  margin-top: 50px;
 }
 
 .overlay {
@@ -23,34 +23,34 @@
   z-index: 1;
 }
 
-.container {
+.header-container {
   position: relative;
   z-index: 2;
   max-width: 800px;
   margin: 0 auto;
-  padding-top: 4rem; /* Adjusted padding to move text closer to the top */
+  padding-top: 4rem;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.title {
+.header .title {
   font-size: 3rem;
   margin-bottom: 0.5rem;
   font-family: 'Montserrat', sans-serif;
   animation: slideInLeft 1s ease-in-out;
 }
 
-.subtitle {
+.header .subtitle {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-family: 'Roboto', sans-serif;
   color: #ffeb3b;
 }
 
-.animatedSubtitle {
+.header .animatedSubtitle {
   animation: bounce 2s infinite;
 }
 
-.description {
+.header .description {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   line-height: 1.6;
@@ -101,33 +101,33 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .header {
-    height: auto;
+    min-height: auto; /* Changed from height to min-height */
     padding: 1rem;
   }
 
-  .title {
+  .header .title {
     font-size: 2.5rem;
   }
 
-  .subtitle {
+  .header .subtitle {
     font-size: 1.5rem;
   }
 
-  .description {
+  .header .description {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .title {
+  .header .title {
     font-size: 2rem;
   }
 
-  .subtitle {
+  .header .subtitle {
     font-size: 1.25rem;
   }
 
-  .description {
+  .header .description {
     font-size: 0.875rem;
   }
 }
