@@ -9,6 +9,9 @@
   transform: translateY(20px);
   animation: fadeInUp 1s forwards;
   margin-top: 50px; /* Adjust this value as needed to move the section down */
+  position: relative; /* Ensure z-index is effective */
+  z-index: 2; /* Ensure this is above any background elements */
+  color: #ffffff; /* Ensure text color is white for contrast */
 }
 
 .container {
@@ -16,6 +19,8 @@
   margin: 0 auto;
   padding: 0 20px;
   overflow: hidden;
+  position: relative; /* Ensure z-index is effective */
+  z-index: 2; /* Ensure this is above any background elements */
 }
 
 h2 {
@@ -45,6 +50,8 @@ h2::after {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s forwards;
+  position: relative; /* Ensure z-index is effective */
+  z-index: 2; /* Ensure this is above any background elements */
 }
 
 h3 {
@@ -56,7 +63,7 @@ h3 {
 
 p {
   font-size: 1.1rem;
-  color: #d3d3d3;
+  color: #ffffff; /* Ensure text color is white for contrast */
   margin-bottom: 0.5em;
   font-family: 'Open Sans', sans-serif;
 }

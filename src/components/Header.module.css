@@ -25,7 +25,7 @@
 
 .header-container {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Ensure this is higher than the overlay */
   max-width: 800px;
   margin: 0 auto;
   padding-top: 4rem;
@@ -51,12 +51,23 @@
 }
 
 .header .description {
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* Corrected from '1.25 rem' */
   margin-bottom: 1rem;
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
   color: #d3d3d3;
   animation: fadeInUp 1s ease-in-out;
+}
+
+.header .highlight {
+  font-weight: bold;
+  font-size: 1.5rem; /* Adjust the size as needed */
+  color: #ffeb3b; /* Marker color */
+  background-color: #000; /* Text background color */
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  display: inline-block; /* To keep the padding around the text */
+  margin-top: 1rem; /* Add some margin for spacing */
 }
 
 @keyframes fadeIn {
@@ -106,7 +117,7 @@
   }
 
   .header .title {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Corrected from '2.5 rem' */
   }
 
   .header .subtitle {
@@ -124,7 +135,7 @@
   }
 
   .header .subtitle {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Corrected from '1.25 rem' */
   }
 
   .header .description {

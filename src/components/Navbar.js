@@ -1,17 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import logo from './logo192.png'; // Adjust the path as needed
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleToggleClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={styles.navbar}>
+    <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.navbarContainer}>
         <div className={styles.logo}>
           <img src={logo} alt="Logo" className={styles.logoImage} />

@@ -1,6 +1,6 @@
 {
-  "short_name": "Roei Nizri Resume",
-  "name": "Wellcome to Roei Nizri",
+  "short_name": "Roei Nizri",
+  "name": "Welcome to Roei Nizri's Professional Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +18,11 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "Explore Roei Nizri's professional portfolio. Discover projects, skills, and experiences in software engineering, web development, AI, and more.",
+  "orientation": "portrait-primary",
+  "lang": "en-US"
 }

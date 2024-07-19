@@ -20,6 +20,21 @@ body {
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #ffeb3b; /* Change background color on scroll */
+  color: #000; /* Change text color on scroll */
+}
+
+.navbar.scrolled .navLink {
+  color: #000; /* Change text color on scroll */
+}
+
+.navbar.scrolled .navLink:hover {
+  color: #ffeb3b;
+  background-color: #000;
 }
 
 .navbarContainer {
@@ -51,19 +66,19 @@ body {
 .navList {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Change to row for mobile view */
   align-items: center;
 }
 
 .navItem {
-  margin: 0.5rem 0;
+  margin: 0.5rem 1rem; /* Adjust margin to balance spacing */
 }
 
 .navLink {
-  color: white;
+  color: inherit; /* Use inherit to ensure the text color changes with the parent */
   text-decoration: none;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navLink:hover {
@@ -74,19 +89,7 @@ body {
 }
 
 .menuToggle {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  position: absolute;
-  right: 1rem; /* Position toggle button on the right */
-}
-
-.menuToggle .bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 3px 0;
-  transition: all 0.3s;
+  display: none; /* Hide the toggle button */
 }
 
 @media (min-width: 768px) {
@@ -101,23 +104,4 @@ body {
   .menuToggle {
     display: none;
   }
-}
-
-/* Animation for mobile menu */
-.navList.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.navbarContainer .menuToggle.active .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.navbarContainer .menuToggle.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.navbarContainer .menuToggle.active .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
 }
