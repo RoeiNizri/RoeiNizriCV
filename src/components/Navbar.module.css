@@ -8,7 +8,10 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #000000 -20%, #ffeb3b 100%);
   padding-top: 70px; /* Add padding equal to navbar height */
+  margin: 0; /* Ensure no margin */
+  min-height: 100vh; /* Ensure body covers full height */
 }
 
 .navbar {
@@ -25,6 +28,7 @@ body {
   align-items: center; /* Align items vertically */
   height: 70px; /* Explicit height */
   justify-content: center; /* Center content */
+  border: none; /* Ensure no border */
 }
 
 .navbar.scrolled {
