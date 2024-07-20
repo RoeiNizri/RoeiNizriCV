@@ -5,6 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import downloadIcon from '../logo512.png'; // Import the new image
 
+const handleDownload = () => {
+  const link = document.createElement('a');
+  link.href = '/RoeiNizri_Resume.pdf';
+  link.setAttribute('download', 'RoeiNizri_Resume.pdf');
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
 const Contact = () => (
   <section className={styles.contact}>
     <div className={styles.container}>
@@ -24,9 +33,9 @@ const Contact = () => (
       <div className={styles.resumeSection}>
         <h3>Download My Resume</h3>
         <p>
-          <a href="/RoeiNizri_Resume.pdf" download="RoeiNizri_Resume.pdf">
+          <button onClick={handleDownload} className={styles.downloadButton}>
             <img src={downloadIcon} alt="Download Resume" className={styles.downloadIcon} />
-          </a>
+          </button>
         </p>
       </div>
     </div>
