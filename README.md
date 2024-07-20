@@ -1,6 +1,3 @@
-Sure! Here is a draft for your README file:
-
----
 
 # Roei Nizri's Web Resume
 
