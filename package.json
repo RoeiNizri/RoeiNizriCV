@@ -1,11 +1,12 @@
 {
-  "homepage": "https://roeinizri.com",
   "name": "roei-nizri-resume",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://roeinizri.com",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -13,8 +14,23 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb": "^19.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.1.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^12.3.0",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-standard": "^29.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,13 +38,42 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint 'src/**/*.{js,jsx}'",
+    "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix",
+    "format": "prettier --write 'src/**/*.{js,jsx,css,html}'",
+    "stylelint": "stylelint 'src/**/*.{css,scss}'",
+    "stylelint:fix": "stylelint 'src/**/*.{css,scss}' --fix"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "airbnb",
+      "prettier"
+    ],
+    "plugins": [
+      "react",
+      "react-hooks"
+    ],
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "react/react-in-jsx-scope": "off",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -42,7 +87,19 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "src/**/*.{css,scss}": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

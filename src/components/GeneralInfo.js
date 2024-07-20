@@ -1,9 +1,16 @@
-import React from 'react';
-import styles from './GeneralInfo.module.css';
+import React from 'react'; // Import React library
+import styles from './GeneralInfo.module.css'; // Import CSS module for styling
 
+/**
+ * GeneralInfo Component
+ * This component renders general information including education, courses,
+ * work experience, and military service. It provides a detailed overview
+ * of the user's background and achievements.
+ */
 const GeneralInfo = () => (
   <section className={styles.general}>
     <div className={styles.container}>
+      {/* Education Section */}
       <h2>Education</h2>
       <div className={styles.section}>
         <h3>Ort Braude – Braude Academic College of Engineering</h3>
@@ -13,6 +20,7 @@ const GeneralInfo = () => (
         <p>During high school, I provided assistance to struggling students and achieved notable leadership milestones.</p>
       </div>
 
+      {/* Courses Section */}
       <h2>Courses</h2>
       <div className={styles.section}>
         <h3>Capital Market Introduction Course</h3>
@@ -23,6 +31,7 @@ const GeneralInfo = () => (
         <p>I learned the art of coffee making, which taught me patience, precision, and the importance of delivering quality – skills I carry into my tech projects.</p>
       </div>
 
+      {/* Work Experience Section */}
       <h2>Work Experience</h2>
       <div className={styles.section}>
         <h3>Ten Gas Station</h3>
@@ -38,7 +47,8 @@ const GeneralInfo = () => (
         <p>2012 - 2014</p>
         <p>Handled logistics and supply chain management, ensuring timely delivery of products. This role enhanced my problem-solving skills and ability to work under pressure.</p>
       </div>
-      
+
+      {/* Military Service Section */}
       <h2>Military Service</h2>
       <div className={styles.section}>
         <h3>Combat & Commanded Camp Security</h3>
@@ -50,4 +60,5 @@ const GeneralInfo = () => (
   </section>
 );
 
+// Export the GeneralInfo component as the default export
 export default GeneralInfo;

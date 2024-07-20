@@ -1,6 +1,12 @@
-import React from 'react';
-import styles from './Skills.module.css';
+import React from 'react'; // Import React library
+import styles from './Skills.module.css'; // Import CSS module for styling
 
+/**
+ * Skills Component
+ * This component renders a section listing various skills, grouped into categories such as
+ * programming languages, web development, database management, AI & ML, graphics programming,
+ * software development, problem solving, and soft skills.
+ */
 const Skills = () => (
   <section className={styles.skills}>
     <div className={styles.container}>
@@ -35,4 +41,5 @@ const Skills = () => (
   </section>
 );
 
+// Export the Skills component as the default export
 export default Skills;
