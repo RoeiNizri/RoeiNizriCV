@@ -20,8 +20,7 @@ if (rootElement) {
 
 // Function to handle reporting web vitals for performance measurement
 const logResults = (metric) => {
-  // You can send this to an analytics endpoint
-  // or log it to the console for now
+  // eslint-disable-next-line no-console
   console.log(metric);
 
   // Example: send to an analytics endpoint
@@ -35,4 +34,3 @@ const logResults = (metric) => {
 // Report web vitals for performance measurement
 // Learn more: https://bit.ly/CRA-vitals
 reportWebVitals(logResults);
-

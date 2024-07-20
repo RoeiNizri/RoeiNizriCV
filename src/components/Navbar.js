@@ -1,26 +1,16 @@
-import React, { useState, useEffect } from 'react'; // Import React and hooks
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom for navigation
-import styles from './Navbar.module.css'; // Import CSS module for styling
-import logo from './logo192.png'; // Import logo image, adjust path as needed
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import styles from './Navbar.module.css';
+import logo from './logo192.png';
 
-/**
- * Navbar Component
- * This component renders a responsive navigation bar with links to different sections
- * of the website. It includes a logo, navigation links, and a menu toggle for mobile view.
- */
 function Navbar() {
-  // State to track if the menu is open (for mobile view)
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-  // State to track if the user has scrolled down the page
   const [scrolled, setScrolled] = useState(false);
 
-  // Function to handle the menu toggle click
   const handleToggleClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Function to handle the scroll event
   const handleScroll = () => {
     if (window.scrollY > 50) {
       setScrolled(true);
@@ -29,7 +19,6 @@ function Navbar() {
     }
   };
 
-  // useEffect hook to add and remove the scroll event listener
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -40,14 +29,12 @@ function Navbar() {
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.navbarContainer}>
-        {/* Logo Section */}
         <div className={styles.logo}>
           <Link to="/" onClick={() => setIsMenuOpen(false)}>
             <img src={logo} alt="Logo" className={styles.logoImage} />
           </Link>
         </div>
         
-        {/* Navigation Links */}
         <nav className={styles.nav}>
           <ul className={isMenuOpen ? `${styles.navList} ${styles.active}` : styles.navList}>
             <li className={styles.navItem}>
@@ -65,7 +52,6 @@ function Navbar() {
           </ul>
         </nav>
         
-        {/* Menu Toggle Button */}
         <div
           className={styles.menuToggle}
           onClick={handleToggleClick}
@@ -87,5 +73,4 @@ function Navbar() {
   );
 }
 
-// Export the Navbar component as the default export
 export default Navbar;

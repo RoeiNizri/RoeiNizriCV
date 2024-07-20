@@ -10,7 +10,6 @@
   text-align: center;
   padding: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 50px;
 }
 
 .overlay {
@@ -110,10 +109,11 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 600) {
   .header {
     min-height: auto; /* Changed from height to min-height */
     padding: 1rem;
+    margin-top: 50px;
   }
 
   .header .title {

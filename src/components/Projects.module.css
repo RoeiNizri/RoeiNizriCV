@@ -4,7 +4,6 @@
   padding: 60px 20px;
   text-align: center;
   background: linear-gradient(135deg, #000000 -20%, #ffeb3b 100%);
-  margin-top: 50px; /* Adjust this value as needed to move the section down */
 }
 
 .projects h2 {
@@ -72,4 +71,10 @@
 .projects .project a:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .projects  {
+    margin-top: 45px;
+  }
 }

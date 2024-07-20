@@ -10,9 +10,11 @@ const reportWebVitals = (onPerfEntry) => {
         getTTFB(onPerfEntry); // Time to First Byte
       })
       .catch((error) => {
+        // eslint-disable-next-line no-console
         console.error('Failed to load web-vitals', error);
       });
   } else {
+    // eslint-disable-next-line no-console
     console.warn('onPerfEntry is not a function or not provided');
   }
 };

@@ -11,7 +11,7 @@
   text-align: center;
   padding: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 70px; /* Adjusted to match navbar height */
+  padding-top: 70px; /* Adjusted to match navbar height */
 }
 
 .contact::before {
@@ -66,8 +66,8 @@
   text-align: center;
   display: inline-block;
   margin: 0 auto;
-  padding-right: 30%; /* Adjust this value to center the content */
   max-width: 100%; /* Ensure it doesn't exceed the container width */
+  color: white; /* Change font color to white */
 }
 
 .contact .contactInfo p {
@@ -77,11 +77,11 @@
   margin-bottom: 1rem;
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
-  color: #ffffff;
+  color: white; /* Change font color to white */
 }
 
 .contact .contactInfo a {
-  color: #0073b1;
+  color: white; /* Change link color to white */
   text-decoration: none;
 }
 
@@ -100,7 +100,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(0); /* Center the section */
 }
 
 .contact .resumeSection h3 {
@@ -119,7 +118,7 @@
 }
 
 .contact .resumeSection img.downloadIcon {
-  width: 150px;
+  width: 300px;
   height: 150px;
   border-radius: 10%; /* Rounded corners */
 }
@@ -146,7 +145,6 @@
   .contact .resumeSection {
     width: 100%; /* Make the section responsive */
     height: auto;
-    width: 110%; /* Adjust the height automatically */
     transform: translateX(0); /* Center the section */
   }
 }

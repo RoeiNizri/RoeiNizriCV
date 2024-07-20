@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import styles from './Contact.module.css';
 import profilePicture from '../RoeiNizriImg.jpg'; // Adjust the path as needed
 import downloadIcon from '../logo512.png'; // Import the new image
@@ -14,15 +16,30 @@ function Contact() {
         <h2>Let&apos;s Get in Touch</h2>
         <img src={profilePicture} alt="Profile" className={styles['profile-picture']} />
         <div className={styles.contactInfo}>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/RoeiNizri" target="_blank" rel="noopener noreferrer">Roei Nizri</a></p>
-          <p><strong>Email:</strong> <a href="mailto:roeinizri1@gmail.com">roeinizri1@gmail.com</a></p>
-          <p>
-            <strong>WhatsApp:</strong> <a href="https://wa.me/972546945333" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faWhatsapp} size="lg" style={{ marginRight: '8px', color: '#25D366' }} />
-              Send me a message
-            </a>
-          </p>
-          <p><strong>Phone:</strong> <a href="tel:054-694-5333">054-694-5333</a></p>
+          <ContactItem
+            href="https://www.linkedin.com/in/RoeiNizri"
+            icon={faLinkedin}
+            color="#0073b1"
+            text="Roei Nizri"
+          />
+          <ContactItem
+            href="mailto:roeinizri1@gmail.com"
+            icon={faEnvelope}
+            color="#D44638"
+            text="roeinizri1@gmail.com"
+          />
+          <ContactItem
+            href="https://wa.me/972546945333"
+            icon={faWhatsapp}
+            color="#25D366"
+            text="Send me a message"
+          />
+          <ContactItem
+            href="tel:054-694-5333"
+            icon={faPhone}
+            color="#000"
+            text="054-694-5333"
+          />
         </div>
         <div className={styles.resumeSection}>
           <h3>Download My Resume</h3>
@@ -36,5 +53,23 @@ function Contact() {
     </section>
   );
 }
+
+function ContactItem({ href, icon, color, text }) {
+  return (
+    <p>
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={icon} size="lg" style={{ marginRight: '2px', color }} />
+        {text}
+      </a>
+    </p>
+  );
+}
+
+ContactItem.propTypes = {
+  href: PropTypes.string.isRequired,
+  icon: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
+  color: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
 export default Contact;

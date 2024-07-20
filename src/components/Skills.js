@@ -14,28 +14,28 @@ function Skills() {
         <h2>Skills</h2>
         <ul className={styles.skillList}>
           <li>
-            <strong>Programming Languages:</strong> I speak the languages of the digital world fluently – C, C#, Java, JavaScript, SQL, Python, and even Assembly. Each project is a new adventure in these languages!
+            <strong>Programming Languages:</strong> I speak the languages of the digital world fluently – <strong>C, C#, Java, JavaScript, SQL, Python,</strong> and even <strong>Assembly</strong>. Each project is a new adventure in these languages!
           </li>
           <li>
-            <strong>Web Development:</strong> Crafting beautiful, responsive websites with HTML, CSS, and React. I bring server-side magic with Node.js to create seamless user experiences.
+            <strong>Web Development:</strong> Crafting beautiful, responsive websites with <strong>HTML, CSS</strong>, and <strong>React</strong> I bring server-side magic with <strong>Node.js</strong> to create seamless user experiences.
           </li>
           <li>
-            <strong>Database Management:</strong> Whether it’s MongoDB or SQL, I know how to store, manage, and retrieve data efficiently to power robust applications.
+            <strong>Database Management:</strong> Whether it’s <strong>MongoDB</strong> or <strong>SQL</strong>, I know how to store, manage, and retrieve data efficiently to power robust applications.
           </li>
           <li>
-            <strong>Artificial Intelligence & Machine Learning:</strong> From implementing smart algorithms to building intuitive AI projects, I’m passionate about pushing the boundaries of what machines can do.
+            <strong>Artificial Intelligence & Machine Learning:</strong> From implementing smart algorithms to building intuitive <strong>AI</strong> projects, I’m passionate about pushing the boundaries of what machines can do.
           </li>
           <li>
-            <strong>Graphics Programming:</strong> Using OpenGL, I transform code into stunning visual experiences, developing interactive and graphical applications that are both functional and beautiful.
+            <strong>Graphics Programming:</strong> Using <strong>OpenGL</strong>, I transform code into stunning visual experiences, developing interactive and graphical applications that are both functional and beautiful.
           </li>
           <li>
-            <strong>Software Development:</strong> Full-stack applications are my playground. With expertise in project management using Git, Excel, and Power BI, I ensure each project is a success from start to finish.
+            <strong>Software Development:</strong> Full-stack applications are my playground. With expertise in project management using <strong>Git, Excel,</strong> and <strong>Power BI</strong>, I ensure each project is a success from start to finish.
           </li>
           <li>
-            <strong>Problem Solving:</strong> I thrive on challenges. Analyzing complex problems and developing effective solutions is what keeps me going.
+            <strong>Problem Solving:</strong> I thrive on challenges. <strong>Analyzing complex problems</strong> and <strong>developing effective solutions</strong> is what keeps me going.
           </li>
           <li>
-            <strong>Soft Skills:</strong> Not just a techie, but a team player with excellent communication skills, attention to detail, and the ability to prioritize tasks effectively.
+            <strong>Soft Skills:</strong> Not just a techie, but <strong>a team player</strong> with excellent <strong>communication skills</strong>, <strong>attention to details</strong>, and the ability to <strong>prioritize tasks effectively</strong>.
           </li>
         </ul>
       </div>

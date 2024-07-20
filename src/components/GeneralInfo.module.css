@@ -8,7 +8,6 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s forwards;
-  margin-top: 50px; /* Adjust this value as needed to move the section down */
   position: relative; /* Ensure z-index is effective */
   z-index: 2; /* Ensure this is above any background elements */
   color: #ffffff; /* Ensure text color is white for contrast */
@@ -95,6 +94,9 @@ p {
 
   p {
     font-size: 1rem;
+  }
+  .general {
+    margin-top: 45px; /* Adjust this value as needed to move the section down */
   }
 }
 

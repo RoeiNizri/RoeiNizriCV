@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -131,4 +126,26 @@ body {
     width: auto; /* Allow nav links to adjust width */
     text-align: center; /* Center align text */
   }
+}
+
+/* Reset default margins and paddings for common elements */
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, footer, section {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the navbar and body don't have extra space */
+.navbar {
+  margin: 0; /* Ensure no margin */
+}
+
+body {
+  padding-top: 70px; /* Add padding equal to navbar height */
+  margin: 0; /* Ensure no margin */
+  min-height: 100vh; /* Ensure body covers full height */
+}
+
+/* Adjust specific section styles if needed */
+section {
+  padding-top: 70px; /* Adjust for the navbar height if sections are affected */
 }
