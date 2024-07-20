@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import downloadIcon from '../logo512.png'; // Import the new image
 
+const googleDriveLink = "https://drive.google.com/file/d/15oYohbsLVEd8UBZfw6Dh61pzELFbPARI/view?usp=drive_link";
+
 const Contact = () => (
   <section className={styles.contact}>
     <div className={styles.container}>
@@ -24,7 +26,7 @@ const Contact = () => (
       <div className={styles.resumeSection}>
         <h3>Download My Resume</h3>
         <p>
-          <a href="../RoeiNizri_Resume.pdf" download="RoeiNizri_Resume.pdf">
+          <a href={googleDriveLink} download="RoeiNizri_Resume.pdf">
             <img src={downloadIcon} alt="Download Resume" className={styles.downloadIcon} />
           </a>
         </p>
