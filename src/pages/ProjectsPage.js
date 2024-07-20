@@ -1,11 +1,12 @@
 import React from 'react';
 import Projects from '../components/Projects';
 
-const ProjectsPage = () => (
-  <div>
-    <Projects />
-    
-  </div>
-);
+function ProjectsPage() {
+  return (
+    <div>
+      <Projects />
+    </div>
+  );
+}
 
 export default ProjectsPage;
