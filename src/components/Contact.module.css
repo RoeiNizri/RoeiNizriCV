@@ -66,17 +66,18 @@
   text-align: center;
   display: inline-block;
   margin: 0 auto;
-  padding-right: 0; /* Adjust this value to center the content */
+  padding-right: 30%; /* Adjust this value to center the content */
   max-width: 100%; /* Ensure it doesn't exceed the container width */
 }
 
 .contact .contactInfo p {
+  z-index: 2;
   margin: 0.5em 0;
   font-size: 1.25rem;
   margin-bottom: 1rem;
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
-  color: #d3d3d3;
+  color: #ffffff;
 }
 
 .contact .contactInfo a {
