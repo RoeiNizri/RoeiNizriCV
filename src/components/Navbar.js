@@ -36,7 +36,6 @@ const Navbar = () => {
         </div>
         <nav className={styles.nav}>
           <ul className={isMenuOpen ? `${styles.navList} ${styles.active}` : styles.navList}>
-            <li className={styles.navItem}><Link to="/" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Home</Link></li>
             <li className={styles.navItem}><Link to="/skills" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Skills</Link></li>
             <li className={styles.navItem}><Link to="/general" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>General</Link></li>
             <li className={styles.navItem}><Link to="/projects" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Portfolio</Link></li>

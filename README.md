@@ -77,7 +77,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Feel free to reach out if you have any questions or suggestions!
 
 - **Email:** [roeinizri1@gmail.com](mailto:roeinizri1@gmail.com)
-- **Phone:** 054-694-5333
 - **LinkedIn:** [/RoeiNizri](https://www.linkedin.com/in/RoeiNizri)
 - **GitHub:** [/RoeiNizri](https://github.com/RoeiNizri)
 

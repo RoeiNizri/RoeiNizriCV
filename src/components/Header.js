@@ -6,7 +6,7 @@ const Header = () => (
     <div className={styles.overlay}></div>
     <div className={styles['header-container']}>
       <h1 className={styles.title}>Roei Nizri</h1>
-      <h2 className={styles.subtitle}>Full Stack Developer Extraordinaire</h2>
+      <h2 className={styles.subtitle}>Full Stack Developer</h2>
       <p className={styles.description}>
         Hey there! I'm Roei, a passionate B.Sc Software Engineering student who loves diving into code
         like a kid into a candy store. With hands-on experience in crafting everything from eye-popping OpenGL

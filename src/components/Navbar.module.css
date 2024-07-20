@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  padding-top: 70px; /* Add padding equal to navbar height */
 }
 
 .navbar {
@@ -20,11 +21,10 @@ body {
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow */
   transition: background-color 0.3s ease, color 0.3s ease;
-  transform: perspective(1000px) translateZ(10px); /* 3D perspective effect */
   display: flex;
   align-items: center; /* Align items vertically */
-  border-radius: 15px; /* Rounded edges */
   height: 70px; /* Explicit height */
+  justify-content: center; /* Center content */
 }
 
 .navbar.scrolled {
@@ -43,12 +43,12 @@ body {
 
 .navbarContainer {
   display: flex;
-  justify-content: space-between; /* Space between logo and nav items */
+  justify-content: center; /* Center content */
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
-  position: relative;
+  flex-wrap: wrap; /* Allow items to wrap */
 }
 
 .logo {
@@ -62,8 +62,9 @@ body {
   height: 60px; /* Adjust the height to fit within the navbar */
   width: 60px; /* Ensure the logo is square for circular rounding */
 }
+
 .logoImage:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 .nav {
@@ -76,6 +77,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Center items */
 }
 
 .navItem {
@@ -89,7 +92,6 @@ body {
   font-size: 1rem;
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
 }
 
@@ -99,43 +101,30 @@ body {
   transform: translateY(-2px); /* Lift up on hover */
 }
 
-.menuToggle {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .nav {
-    display: none;
+@media (max-width: 768px) {
+  .navbar {
+    height: auto; /* Allow height to adjust for content */
   }
 
-  .menuToggle {
-    display: block;
-    cursor: pointer;
+  .navbarContainer {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center align items */
   }
 
   .navList {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #000;
-  }
-
-  .navList.active {
-    display: flex;
+    flex-direction: row; /* Ensure nav items remain in a row */
+    width: 100%; /* Make nav items take full width */
+    align-items: center; /* Center align nav items */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items */
   }
 
   .navItem {
-    margin: 1rem 0;
+    margin: 0.5rem; /* Adjust margin for nav items */
   }
 
-  .navbar {
-    padding: 0.5rem 0.5rem;
-  }
-
-  .navItem {
-    font-size: 0.9rem;
+  .navLink {
+    width: auto; /* Allow nav links to adjust width */
+    text-align: center; /* Center align text */
   }
 }
