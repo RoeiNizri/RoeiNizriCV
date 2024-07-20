@@ -75,7 +75,3 @@ Feel free to reach out if you have any questions or suggestions!
 - **Email:** [roeinizri1@gmail.com](mailto:roeinizri1@gmail.com)
 - **LinkedIn:** [/RoeiNizri](https://www.linkedin.com/in/RoeiNizri)
 - **GitHub:** [/RoeiNizri](https://github.com/RoeiNizri)
-
----
-
-Hope this helps! Let me know if there's anything else you'd like to add or modify.
