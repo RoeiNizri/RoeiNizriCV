@@ -22,7 +22,82 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "description": "Explore Roei Nizri's professional portfolio. Discover projects, skills, and experiences in software engineering, web development, AI, and more.",
+  "description": "Explore Roei Nizri's professional portfolio showcasing innovative projects, diverse skills, and extensive experiences in software engineering, web development, AI, and more. Discover the expertise and creativity behind Roei's work.",
   "orientation": "portrait-primary",
-  "lang": "en-US"
+  "lang": "en-US",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "640x480",
+      "type": "image/png",
+      "label": "Homepage"
+    },
+    {
+      "src": "screenshot2.png",
+      "sizes": "640x480",
+      "type": "image/png",
+      "label": "Projects Page"
+    },
+    {
+      "src": "screenshot3.png",
+      "sizes": "640x480",
+      "type": "image/png",
+      "label": "Contact Page"
+    }
+  ],
+  "categories": [
+    "portfolio",
+    "software",
+    "development",
+    "web",
+    "AI",
+    "engineering",
+    "technology",
+    "education",
+    "productivity"
+  ],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://roeinizri.com",
+      "id": "com.roeinizri.web"
+    }
+  ],
+  "permissions": [
+    "notifications",
+    "background-fetch"
+  ],
+  "background_tasks": [
+    {
+      "task": "syncData",
+      "description": "Syncs data with the server periodically."
+    }
+  ],
+  "custom_actions": [
+    {
+      "name": "View Projects",
+      "short_name": "Projects",
+      "description": "Quickly navigate to the projects page.",
+      "url": "/projects"
+    },
+    {
+      "name": "Contact Me",
+      "short_name": "Contact",
+      "description": "Get in touch with Roei Nizri.",
+      "url": "/contact"
+    }
+  ],
+  "features": [
+    {
+      "name": "Offline Mode",
+      "description": "Access the portfolio even when you are offline.",
+      "url": "/offline"
+    },
+    {
+      "name": "Dark Mode",
+      "description": "Switch to a dark theme for a comfortable viewing experience in low light.",
+      "url": "/dark-mode"
+    }
+  ]
 }
