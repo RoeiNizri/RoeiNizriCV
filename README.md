@@ -1,4 +1,3 @@
-
 # Roei Nizri's Web Resume
 
 Welcome to the repository for Roei Nizri's web resume! This project showcases my professional experience, skills, projects, and contact information in an interactive and visually appealing format using React.
