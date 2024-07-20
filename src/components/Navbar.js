@@ -8,7 +8,7 @@ import logo from './logo192.png'; // Import logo image, adjust path as needed
  * This component renders a responsive navigation bar with links to different sections
  * of the website. It includes a logo, navigation links, and a menu toggle for mobile view.
  */
-const Navbar = () => {
+function Navbar() {
   // State to track if the menu is open (for mobile view)
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
@@ -66,15 +66,26 @@ const Navbar = () => {
         </nav>
         
         {/* Menu Toggle Button */}
-        <div className={styles.menuToggle} onClick={handleToggleClick}>
-          <span className={`${styles.bar} ${isMenuOpen ? styles.active : ''}`}></span>
-          <span className={`${styles.bar} ${isMenuOpen ? styles.active : ''}`}></span>
-          <span className={`${styles.bar} ${isMenuOpen ? styles.active : ''}`}></span>
+        <div
+          className={styles.menuToggle}
+          onClick={handleToggleClick}
+          onKeyPress={(e) => {
+            if (e.key === 'Enter') {
+              handleToggleClick();
+            }
+          }}
+          role="button"
+          tabIndex="0"
+          aria-label="Toggle menu"
+        >
+          <span className={`${styles.bar} ${isMenuOpen ? styles.active : ''}`} />
+          <span className={`${styles.bar} ${isMenuOpen ? styles.active : ''}`} />
+          <span className={`${styles.bar} ${isMenuOpen ? styles.active : ''}`} />
         </div>
       </div>
     </header>
   );
-};
+}
 
 // Export the Navbar component as the default export
 export default Navbar;
