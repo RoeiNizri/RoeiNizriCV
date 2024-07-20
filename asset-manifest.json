@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/RoeiNizriCV/static/css/main.e8cc0f8b.css",
+    "main.js": "/RoeiNizriCV/static/js/main.3e786456.js",
+    "static/js/453.1af085fd.chunk.js": "/RoeiNizriCV/static/js/453.1af085fd.chunk.js",
+    "static/media/logo512.png": "/RoeiNizriCV/static/media/logo512.308d3af7e0b7c1b29ea0.png",
+    "static/media/logo192.png": "/RoeiNizriCV/static/media/logo192.14785ed38f3c04c191da.png",
+    "static/media/RoeiNizriImg.jpg": "/RoeiNizriCV/static/media/RoeiNizriImg.b3586faf00975de05150.jpg",
+    "index.html": "/RoeiNizriCV/index.html",
+    "main.e8cc0f8b.css.map": "/RoeiNizriCV/static/css/main.e8cc0f8b.css.map",
+    "main.3e786456.js.map": "/RoeiNizriCV/static/js/main.3e786456.js.map",
+    "453.1af085fd.chunk.js.map": "/RoeiNizriCV/static/js/453.1af085fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8cc0f8b.css",
+    "static/js/main.3e786456.js"
+  ]
+}
