@@ -5,8 +5,8 @@
 .contact {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Changed from height to min-height */
-  background: linear-gradient(135deg, #000000 0%, #ffeb3b 100%);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 -20%, #ffeb3b 100%);
   color: #ffeb3b;
   overflow: hidden;
   text-align: center;
@@ -47,15 +47,16 @@
 
 .contact .profile-picture {
   width: 225px;
-  height: 265px;
+  height: 225px; /* Adjusted height to be the same as width */
   border-radius: 50%;
+  margin-top: 2em; /* Add this line to move the picture down */
   margin-bottom: 1em;
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .contact .profile-picture:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .contact .contactInfo {
@@ -63,6 +64,10 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s 0.6s forwards;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  padding-right: 200px; /* Adjust this value to move it more or less to the left */
 }
 
 .contact .contactInfo p {
@@ -72,7 +77,6 @@
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
   color: #d3d3d3;
-  animation: fadeInUp 1s ease-in-out;
 }
 
 .contact .contactInfo a {
@@ -89,7 +93,16 @@
   padding: 1rem;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  width: 400px; /* Make the section square */
+  height: 200px; /* Make the section square */
+  margin: 1rem auto; /* Center the square */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-25%); /* Move the section left */
+  
 }
+
 
 .contact .resumeSection h3 {
   font-size: 2em;
@@ -104,7 +117,18 @@
 
 .contact .resumeSection a:hover {
   text-decoration: underline;
+  
 }
+
+.contact .resumeSection img.downloadIcon {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%; /* Rounded corners */
+}
+.contact .resumeSection img.downloadIcon:hover {
+  transform: scale(1.05);
+}
+
 
 @media (max-width: 600px) {
   .contact .profile-picture {

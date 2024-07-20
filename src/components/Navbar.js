@@ -30,7 +30,9 @@ const Navbar = () => {
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.navbarContainer}>
         <div className={styles.logo}>
-          <img src={logo} alt="Logo" className={styles.logoImage} />
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+            <img src={logo} alt="Logo" className={styles.logoImage} />
+          </Link>
         </div>
         <nav className={styles.nav}>
           <ul className={isMenuOpen ? `${styles.navList} ${styles.active}` : styles.navList}>
