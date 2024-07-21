@@ -34,7 +34,7 @@
   z-index: 1;
   max-width: 800px;
   margin: 0 auto;
-  /*padding: 0 1em;*/
+  padding: 0 1em;
 }
 
 .contact h2 {
@@ -71,7 +71,8 @@
   margin: 0 auto;
   max-width: 100%; /* Ensure it doesn't exceed the container width */
   color: white; /* Change font color to white */
-  /*padding: 1rem; /* Ensure proper padding for text */
+  padding: 1rem; /* Ensure proper padding for text */
+  
 }
 
 .contact .contactInfo p {
@@ -146,7 +147,6 @@
 
   .contact .contactInfo {
     font-size: 1em;
-    padding: 0; /* Remove padding */
     text-align: center; /* Center the text for smaller screens */
   }
 
@@ -179,7 +179,6 @@
 
   .contact .contactInfo {
     font-size: 0.875em;
-    padding: 0; /* Remove padding */
     text-align: center; /* Center the text for smaller screens */
   }
 
