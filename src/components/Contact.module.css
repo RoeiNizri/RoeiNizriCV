@@ -140,13 +140,15 @@
 
   .contact .contactInfo {
     font-size: 1em;
-    padding-right: 0; /* Ensure no extra padding */
   }
 
   .contact .resumeSection {
     width: 100%; /* Make the section responsive */
     height: auto;
     transform: translateX(0); /* Center the section */
+  }
+  .contact {
+    margin-top: 45px; /* Add margin-top specifically for mobile */
   }
 }
 
