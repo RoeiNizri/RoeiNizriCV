@@ -72,6 +72,7 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   animation: fadeInUp 1s ease-in-out;
+  padding: 0 1rem; /* Added padding to improve readability */
 }
 
 .header .highlight {
@@ -177,6 +178,7 @@ html, body {
     font-size: 1rem;
     line-height: 1.4;
     margin-bottom: 0.75rem;
+    padding: 0 0.5rem; /* Adjusted padding for smaller screens */
   }
 
   .header .highlight {
@@ -201,6 +203,7 @@ html, body {
     font-size: 0.875rem;
     line-height: 1.3;
     margin-bottom: 0.5rem;
+    padding: 0 0.25rem; /* Adjusted padding for smaller screens */
   }
 
   .header .highlight {
