@@ -42,6 +42,7 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s 0.2s forwards;
+  font-weight: bo;
 }
 
 .contact .profile-picture {
@@ -174,9 +175,9 @@
 
   .contact .contactInfo {
     font-size: 0.875em;
-    padding: 1rem; /* Ensure proper padding for text */
+    padding: 1; /* Ensure proper padding for text */
     text-align: center; /* Center the text for smaller screens */
-    padding-right: 130px;
+    padding-right: 100px;
   }
 
   .contact .resumeSection {
