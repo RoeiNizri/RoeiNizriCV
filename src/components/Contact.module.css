@@ -68,7 +68,7 @@
   margin: 0 auto;
   max-width: 100%; /* Ensure it doesn't exceed the container width */
   color: white; /* Change font color to white */
-  padding: 0 1rem; /* Ensure proper padding for text */
+  padding: 1rem 15rem 1rem 1rem; /* Ensure proper padding for text */
 }
 
 .contact .contactInfo p {
@@ -78,11 +78,11 @@
   margin-bottom: 1rem;
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
-  color: white; /* Change font color to white */
+  color: rgb(255, 255, 0); /* Change font color to white */
 }
 
 .contact .contactInfo a {
-  color: white; /* Change link color to white */
+  color:white; /* Change link color to white */
   text-decoration: none;
 }
 

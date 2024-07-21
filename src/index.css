@@ -1,4 +1,5 @@
-/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -97,4 +98,25 @@ input, textarea {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Footer styles */
+footer {
+  background: conic-gradient(135deg, #000000 -20%, #ffeb3b 100%);
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Changed from fixed to relative */
+  width: 100%;
+  z-index: 1; /* Ensure the footer is on top */
+}
+
+footer p, footer a {
+  color: rgba(255, 255, 255, 1); /* Make the text fully white */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow for contrast */
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

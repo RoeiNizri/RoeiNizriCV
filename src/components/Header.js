@@ -25,21 +25,21 @@ function Header() {
 
         {/* Description Paragraphs */}
         <p className={styles.description}>
-          Hey there! I&apos;m Roei, a passionate B.Sc Software Engineering student who loves diving into code
-          like a kid into a candy store. With hands-on experience in crafting everything from eye-popping OpenGL
-          graphics to robust full-stack applications and clever AI algorithms, I&apos;m always up for a coding challenge.
+          Hey there! I&apos;m Roei, a passionate <span className={styles.highlighted}>B.Sc Software Engineer</span> who loves diving into code
+          like a kid into a candy store. With hands-on experience in crafting everything from eye-popping <span className={styles.highlighted}>OpenGL </span>
+          graphics to robust <span className={styles.highlighted}>full-stack applications</span> and clever AI algorithms, I&apos;m always up for a coding challenge.
         </p>
         <p className={styles.description}>
           I&apos;m a tech enthusiast with a knack for multiple programming languages and technologies. My areas of interest
-          span across medical solutions, financial solutions, artificial intelligence, and blockchain – yes, I&apos;m a bit of
+          span across <span className={styles.highlighted}>medical solutions</span>, <span className={styles.highlighted}>financial solutions</span>, <span className={styles.highlighted}>artificial intelligence</span>, and <span className={styles.highlighted}>blockchain</span> – yes, I&apos;m a bit of
           a blockchain expert too! Whether it&apos;s building a life-saving app, optimizing financial transactions, creating
           smart AI systems, or exploring the future of decentralized tech, I&apos;m your go-to developer.
         </p>
         <p className={styles.description}>
-          Beyond coding, I bring a wealth of experience from customer service and management roles. I know how to lead
-          teams, keep projects on track, and deliver results under pressure. When I&apos;m not coding, you might find me
-          brainstorming the next big idea or enjoying some quality downtime. By the way, when I&apos;m not buried in code, I&apos;m either hitting the gym, getting lost in a good book, playing the piano, or just enjoying life&apos;s simple pleasures. Curious to know more? Keep browsing!
-          Ready to see more? 
+          Beyond coding, I bring a wealth of experience from customer service and management roles. I know how to <span className={styles.highlighted}>lead teams</span>,
+          keep projects on track, and deliver <span className={styles.highlighted}>results under pressure</span>. When I&apos;m not coding, you might find me
+          brainstorming the next big idea or enjoying some quality downtime. By the way, when I&apos;m not buried in code, I&apos;m either hitting the gym, getting lost in a good book, playing the piano, or just enjoying life&apos;s simple pleasures. Curious to know more? <span className={styles.highlighted}>Keep browsing!</span>
+          <span className={styles.highlighted}> Ready to see more?</span> 
           <span className={styles.highlight}>
             Why stop here? Explore the site, there are more surprises than finding Satoshi Nakamoto!
             <FontAwesomeIcon icon={faBitcoin} className={styles.icon} />
