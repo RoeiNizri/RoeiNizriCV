@@ -9,14 +9,16 @@
   color: #ffeb3b;
   overflow: hidden;
   text-align: center;
-  padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);
   padding-top: 70px; /* Adjusted to match navbar height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact::before {
   content: '';
-  position: relative;
+  position: absolute;
   top: -50px;
   left: -50px;
   right: -50px;
@@ -32,7 +34,7 @@
   z-index: 1;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 1em;
+  /*padding: 0 1em;*/
 }
 
 .contact h2 {
@@ -69,7 +71,7 @@
   margin: 0 auto;
   max-width: 100%; /* Ensure it doesn't exceed the container width */
   color: white; /* Change font color to white */
-  padding: 1rem 15rem 1rem 1rem; /* Ensure proper padding for text */
+  /*padding: 1rem; /* Ensure proper padding for text */
 }
 
 .contact .contactInfo p {
@@ -103,7 +105,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column; /* Stack content vertically */
-  margin-left: 10%; /* Add space between elements */
 }
 
 .contact .resumeSection h3 {
@@ -137,7 +138,6 @@
   .contact .profile-picture {
     width: 150px;
     height: 150px;
-    height: auto;
   }
 
   .contact h2 {
@@ -146,9 +146,8 @@
 
   .contact .contactInfo {
     font-size: 1em;
-    padding: 0 0.5rem; /* Ensure padding for smaller screens */
+    padding: 0; /* Remove padding */
     text-align: center; /* Center the text for smaller screens */
-    padding-right: 130px;
   }
 
   .contact .resumeSection {
@@ -157,8 +156,14 @@
     height: auto;
     padding: 1rem; /* Add padding for small screens */
   }
+
   .contact {
     margin-top: 45px; /* Add margin-top specifically for mobile */
+  }
+
+  .contact .contactInfo p, .contact .contactInfo a {
+    display: block; /* Ensure they stack vertically */
+    text-align: center;
   }
 }
 
@@ -166,7 +171,6 @@
   .contact .profile-picture {
     width: 120px;
     height: 120px;
-    height: auto;
   }
 
   .contact h2 {
@@ -175,14 +179,13 @@
 
   .contact .contactInfo {
     font-size: 0.875em;
-    padding: 1; /* Ensure proper padding for text */
+    padding: 0; /* Remove padding */
     text-align: center; /* Center the text for smaller screens */
-    padding-right: 100px;
   }
 
   .contact .resumeSection {
-    width: 50%; /* Make the section responsive */
-    max-width: 50%; /* Ensure it takes full width on small screens */
+    width: 100%; /* Make the section responsive */
+    max-width: 100%; /* Ensure it takes full width on small screens */
     height: auto;
   }
 }

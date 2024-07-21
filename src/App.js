@@ -7,7 +7,6 @@ import SkillsPage from './pages/SkillsPage';
 import GeneralInfoPage from './pages/GeneralInfoPage';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
-import Popup from './components/Popup'; // Ensure this matches the actual case of the filename
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/general" element={<GeneralInfoPage />} />
         </Routes>
-        <Popup /> {/* Add the Popup component here */}
       </div>
     </Router>
   );

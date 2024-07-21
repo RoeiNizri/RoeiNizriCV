@@ -27,7 +27,7 @@ function Header() {
         <p className={styles.description}>
           Hey there! I&apos;m Roei, a passionate <span className={styles.highlighted}>B.Sc Software Engineer</span> who loves diving into code
           like a kid into a candy store. With hands-on experience in crafting everything from eye-popping <span className={styles.highlighted}>OpenGL </span>
-          graphics to robust <span className={styles.highlighted}>full-stack applications</span> and clever AI algorithms, I&apos;m always up for a coding challenge.
+          graphics to robust <span className={styles.highlighted}>full-stack applications</span> and clever <span className={styles.highlighted}>AI</span> algorithms, I&apos;m always up for a coding challenge.
         </p>
         <p className={styles.description}>
           I&apos;m a tech enthusiast with a knack for multiple programming languages and technologies. My areas of interest
