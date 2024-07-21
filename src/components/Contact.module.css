@@ -68,6 +68,7 @@
   margin: 0 auto;
   max-width: 100%; /* Ensure it doesn't exceed the container width */
   color: white; /* Change font color to white */
+  padding-right: 30%;
 }
 
 .contact .contactInfo p {
