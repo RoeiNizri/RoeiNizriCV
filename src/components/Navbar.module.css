@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+
 body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(135deg, #000000 -20%, #ffeb3b 100%);
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
-  padding-top: 70px; /* Ensure padding equal to navbar height */
-}
-
-section {
-  padding-top: 70px; /* Ensure padding for sections */
-  padding-bottom: 1rem; /* Add bottom padding to avoid content being cut off */
+  padding-top: 70px; /* Add padding equal to navbar height */
+  margin: 0; /* Ensure no margin */
+  min-height: 100vh; /* Ensure body covers full height */
 }
 
 .navbar {
@@ -23,21 +17,22 @@ section {
   width: 100%;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow */
   transition: background-color 0.3s ease, color 0.3s ease;
   display: flex;
-  align-items: center;
-  height: 70px;
-  justify-content: center;
+  align-items: center; /* Align items vertically */
+  height: 70px; /* Explicit height */
+  justify-content: center; /* Center content */
+  border: none; /* Ensure no border */
 }
 
 .navbar.scrolled {
-  background-color: #ffeb3b;
-  color: #000;
+  background-color: #ffeb3b; /* Change background color on scroll */
+  color: #000; /* Change text color on scroll */
 }
 
 .navbar.scrolled .navLink {
-  color: #000;
+  color: #000; /* Change text color on scroll */
 }
 
 .navbar.scrolled .navLink:hover {
@@ -47,12 +42,12 @@ section {
 
 .navbarContainer {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center content */
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allow items to wrap */
 }
 
 .logo {
@@ -62,9 +57,9 @@ section {
 }
 
 .logoImage {
-  border-radius: 10%;
-  height: 60px;
-  width: 60px;
+  border-radius: 10%; /* Rounded edges for the logo */
+  height: 60px; /* Adjust the height to fit within the navbar */
+  width: 60px; /* Ensure the logo is square for circular rounding */
 }
 
 .logoImage:hover {
@@ -81,13 +76,13 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Center items */
 }
 
 .navItem {
   margin: 0 1rem;
-  transform: perspective(1000px) translateZ(10px);
+  transform: perspective(1000px) translateZ(10px); /* 3D perspective effect */
 }
 
 .navLink {
@@ -96,90 +91,61 @@ section {
   font-size: 1rem;
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
   padding: 0.5rem 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
 }
 
 .navLink:hover {
   color: #000;
   background-color: #ffeb3b;
-  transform: translateY(-2px);
-}
-
-.menuToggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menuToggle .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 4px 0;
-  transition: 0.3s;
-}
-
-.menuToggle.active .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.menuToggle.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menuToggle.active .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: translateY(-2px); /* Lift up on hover */
 }
 
 @media (max-width: 768px) {
   .navbar {
-    height: auto;
+    height: auto; /* Allow height to adjust for content */
   }
 
   .navbarContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav {
-    display: none;
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center align items */
   }
 
   .navList {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row; /* Ensure nav items remain in a row */
+    width: 100%; /* Make nav items take full width */
+    align-items: center; /* Center align nav items */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items */
   }
 
   .navItem {
-    margin: 0.5rem;
+    margin: 0.5rem; /* Adjust margin for nav items */
   }
 
   .navLink {
-    width: auto;
-    text-align: center;
-  }
-
-  .menuToggle {
-    display: flex;
-  }
-
-  .navList.active {
-    display: flex;
+    width: auto; /* Allow nav links to adjust width */
+    text-align: center; /* Center align text */
   }
 }
 
+/* Reset default margins and paddings for common elements */
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, footer, section {
   margin: 0;
   padding: 0;
 }
 
-body {
-  padding-top: 70px;
+/* Ensure the navbar and body don't have extra space */
+.navbar {
+  margin: 0; /* Ensure no margin */
 }
 
+body {
+  padding-top: 70px; /* Add padding equal to navbar height */
+  margin: 0; /* Ensure no margin */
+  min-height: 100vh; /* Ensure body covers full height */
+}
+
+/* Adjust specific section styles if needed */
 section {
-  padding-top: 70px;
+  padding-top: 70px; /* Adjust for the navbar height if sections are affected */
 }
