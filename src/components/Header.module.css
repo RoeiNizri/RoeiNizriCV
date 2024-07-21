@@ -101,7 +101,6 @@ html, body {
 
 .highlighted {
   font-weight: bold;
-  font-size: 22px;
 }
 
 @keyframes pulse {

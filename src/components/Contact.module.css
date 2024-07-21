@@ -169,7 +169,7 @@
 
   .contact .contactInfo {
     font-size: 0.875em;
-    padding: 0 0.25rem; /* Adjusted padding for smaller screens */
+    padding: 1rem 15rem 1rem 1rem; /* Ensure proper padding for text */
   }
 
   .contact .resumeSection {
