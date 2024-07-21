@@ -26,7 +26,7 @@ function Projects() {
 
         {/* Restaurant and Shell Menu Programming */}
         <div className={styles.project}>
-          <h3>Restaurant and Shell Menu Programming &amp; ADT Programming</h3>
+          <h3>Restaurant Shell Menu Programming &amp; ADT Programming</h3>
           <p>Programmed a user-friendly shell menu interface for a restaurant, facilitating order management and streamlining operations. Designed and implemented a restaurant management system leveraging ADT and file storage.</p>
         </div>
 
