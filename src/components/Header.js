@@ -1,4 +1,6 @@
 import React from 'react'; // Import React library
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon component
+import { faBitcoin } from '@fortawesome/free-brands-svg-icons'; // Import Bitcoin icon from FontAwesome
 import styles from './Header.module.css'; // Import CSS module for styling
 
 /**
@@ -38,7 +40,10 @@ function Header() {
           teams, keep projects on track, and deliver results under pressure. When I&apos;m not coding, you might find me
           brainstorming the next big idea or enjoying some quality downtime. By the way, when I&apos;m not buried in code, I&apos;m either hitting the gym, getting lost in a good book, playing the piano, or just enjoying life&apos;s simple pleasures. Curious to know more? Keep browsing!
           Ready to see more? 
-          <span className={styles.highlight}>Don&apos;t miss out on the cool projects and insights on the following pages!</span>
+          <span className={styles.highlight}>
+            Why stop here? Explore the site, there are more surprises than finding Satoshi Nakamoto!
+            <FontAwesomeIcon icon={faBitcoin} className={styles.icon} />
+          </span>
         </p>
       </div>
     </header>
