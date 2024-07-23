@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+import 'normalize.css';
+
+
 
 // Create the root element where the React app will be mounted
 const rootElement = document.getElementById('root');

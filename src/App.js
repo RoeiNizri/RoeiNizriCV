@@ -8,6 +8,7 @@ import GeneralInfoPage from './pages/GeneralInfoPage';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import Popup from './components/Popup'; // Ensure this matches the actual case of the filename
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div className="App">
         <Navbar />
         <ScrollToTop />
+        <ScrollToTopButton />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<ContactPage />} />
