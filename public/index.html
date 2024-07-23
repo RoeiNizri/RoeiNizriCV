@@ -95,26 +95,6 @@
   <link rel="dns-prefetch" href="//www.linkedin.com">
   <link rel="dns-prefetch" href="//github.com">
   
-  <style>
-    body {
-        height: 2000px; /* Just for demo purposes */
-    }
-    #scrollTopBtn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        display: none;
-        padding: 10px 20px;
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-  </style>
-</head>
-<body>
   <main role="main">
     <noscript>
       <p>Welcome to Roei Nizri's website. Please enable JavaScript to view the full site.</p>
@@ -131,24 +111,5 @@
       <a href="%PUBLIC_URL%/help.html" target="_blank" rel="noopener noreferrer">Help</a>
     </div>
   </footer>
-  
-  <!-- Scroll to Top Button -->
-  <button id="scrollTopBtn" onclick="scrollToTop()">Scroll to Top</button>
-
-  <script>
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              document.getElementById("scrollTopBtn").style.display = "block";
-          } else {
-              document.getElementById("scrollTopBtn").style.display = "none";
-          }
-      }
-
-      function scrollToTop() {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-  </script>
 </body>
 </html>

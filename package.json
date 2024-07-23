@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.19",
     "core-js": "^3.37.1",
+    "framer-motion": "^11.3.11",
     "normalize.css": "^8.0.1",
     "postcss-cli": "^11.0.0",
     "prop-types": "^15.8.1",
