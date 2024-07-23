@@ -7,7 +7,7 @@ import SkillsPage from './pages/SkillsPage';
 import GeneralInfoPage from './pages/GeneralInfoPage';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
-import Popup from './components/Popup'; // Ensure this matches the actual case of the filename
+import Popup from './components/Popup';
 import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
