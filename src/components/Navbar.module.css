@@ -60,6 +60,7 @@ body {
   border-radius: 10%; /* Rounded edges for the logo */
   height: 60px; /* Adjust the height to fit within the navbar */
   width: 60px; /* Ensure the logo is square for circular rounding */
+  margin-top: 0.3cm;
 }
 
 .logoImage:hover {
