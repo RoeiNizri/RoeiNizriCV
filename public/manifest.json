@@ -1,6 +1,6 @@
 {
   "short_name": "Roei Nizri",
-  "name": "Welcome to Roei Nizri's Professional Portfolio",
+  "name": "Welcome to Roei Nizri's Website",
   "icons": [
     {
       "src": "favicon.ico",
@@ -22,7 +22,7 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "description": "Explore Roei Nizri's professional portfolio showcasing innovative projects, diverse skills, and extensive experiences in software engineering, web development, AI, and more. Discover the expertise and creativity behind Roei's work.",
+  "description": "Explore Roei Nizri's showcasing innovative projects, diverse skills, and extensive experiences in software engineering, web development, AI, and more. Discover the expertise and creativity behind Roei's work.",
   "orientation": "portrait-primary",
   "lang": "en-US",
   "scope": "/",
@@ -61,7 +61,7 @@
     {
       "platform": "web",
       "url": "https://roeinizri.com",
-      "id": "com.roeinizri.web"
+      "id": "roeinizri.web"
     }
   ],
   "permissions": [
@@ -79,25 +79,25 @@
       "name": "View Projects",
       "short_name": "Projects",
       "description": "Quickly navigate to the projects page.",
-      "url": "/projects"
+      "url": "https://roeinizri.com/#/projects"
     },
     {
       "name": "Contact Me",
       "short_name": "Contact",
       "description": "Get in touch with Roei Nizri.",
-      "url": "/contact"
+      "url": "https://roeinizri.com/#/contact"
     }
   ],
   "features": [
     {
       "name": "Offline Mode",
       "description": "Access the portfolio even when you are offline.",
-      "url": "/offline"
+      "url": "https://roeinizri.com/#/general"
     },
     {
       "name": "Dark Mode",
       "description": "Switch to a dark theme for a comfortable viewing experience in low light.",
-      "url": "/dark-mode"
+      "url": "https://roeinizri.com/#/"
     }
   ]
 }
