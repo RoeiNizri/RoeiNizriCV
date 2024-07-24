@@ -28,7 +28,7 @@ html, body {
   z-index: 2;
   max-width: 80%; /* Ensure it takes full width */
   margin: 0 auto;
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-left: 1rem; /* Added padding to improve readability */
   padding-right: 1rem; /* Added padding to improve readability */
   animation: fadeIn 1.5s ease-in-out;
