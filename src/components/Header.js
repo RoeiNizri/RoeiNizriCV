@@ -12,9 +12,6 @@ import styles from './Header.module.css'; // Import CSS module for styling
 function Header() {
   return (
     <header className={styles.header}>
-      {/* Overlay for visual effect */}
-      <div className={styles.overlay} />
-
       {/* Container for the header content */}
       <div className={styles['header-container']}>
         {/* Title */}

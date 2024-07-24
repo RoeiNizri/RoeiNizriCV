@@ -1,73 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import logo from './logo192.png';
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  const handleToggleClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+    <header className={`${styles.navbar} $`}>
       <div className={styles.navbarContainer}>
         <div className={styles.logo}>
-          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+        <Link to="/">
             <img src={logo} alt="Logo" className={styles.logoImage} />
           </Link>
         </div>
-        
         <nav className={styles.nav}>
-          <ul className={isMenuOpen ? `${styles.navList} ${styles.active}` : styles.navList}>
+          <ul className={styles.navList}>
             <li className={styles.navItem}>
-              <Link to="/skills" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Skills</Link>
+              <Link to="/skills" className={styles.navLink}>Skills</Link>
             </li>
             <li className={styles.navItem}>
-              <Link to="/general" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>General</Link>
+              <Link to="/general" className={styles.navLink}>General</Link>
             </li>
             <li className={styles.navItem}>
-              <Link to="/projects" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
+              <Link to="/projects" className={styles.navLink}>Portfolio</Link>
             </li>
             <li className={styles.navItem}>
-              <Link to="/contact" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Contact</Link>
+              <Link to="/contact" className={styles.navLink}>Contact</Link>
             </li>
           </ul>
         </nav>
-        
-        <div
-          className={styles.menuToggle}
-          onClick={handleToggleClick}
-          onKeyPress={(e) => {
-            if (e.key === 'Enter') {
-              handleToggleClick();
-            }
-          }}
-          role="button"
-          tabIndex="0"
-          aria-label="Toggle menu"
-        >
-          <span className={`${styles.bar} ${isMenuOpen ? styles.active : ''}`} />
-          <span className={`${styles.bar} ${isMenuOpen ? styles.active : ''}`} />
-          <span className={`${styles.bar} ${isMenuOpen ? styles.active : ''}`} />
-        </div>
       </div>
     </header>
   );
