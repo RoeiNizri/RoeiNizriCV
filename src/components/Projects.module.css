@@ -35,7 +35,8 @@ html, body {
 .projects .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 .projects .project {

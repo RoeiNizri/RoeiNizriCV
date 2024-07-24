@@ -21,10 +21,11 @@ html, body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
   overflow: hidden;
   position: relative; /* Ensure z-index is effective */
   z-index: 2; /* Ensure this is above any background elements */
+  padding-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 h2 {
