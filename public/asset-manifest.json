@@ -99,5 +99,22 @@
       "description": "Switch to a dark theme for a comfortable viewing experience in low light.",
       "url": "https://roeinizri.com/#/"
     }
+  ],
+  "files": {
+    "main.css": "/static/css/main.b45729b2.css",
+    "main.js": "/static/js/main.2227b28d.js",
+    "static/js/453.624f2d45.chunk.js": "/static/js/453.624f2d45.chunk.js",
+    "static/media/logo512.png": "/static/media/logo512.308d3af7e0b7c1b29ea0.png",
+    "static/media/logo192.png": "/static/media/logo192.14785ed38f3c04c191da.png",
+    "static/media/RoeiNizriImg.jpg": "/static/media/RoeiNizriImg.b3586faf00975de05150.jpg",
+    "static/media/popup.png": "/static/media/popup.3e8a7a155d5ed6612ec0.png",
+    "index.html": "/index.html",
+    "main.b45729b2.css.map": "/static/css/main.b45729b2.css.map",
+    "main.2227b28d.js.map": "/static/js/main.2227b28d.js.map",
+    "453.624f2d45.chunk.js.map": "/static/js/453.624f2d45.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b45729b2.css",
+    "static/js/main.2227b28d.js"
   ]
 }
