@@ -10,7 +10,6 @@ body {
 .navbar {
   background: linear-gradient(135deg, #000000 -20%, #ffeb3b 100%);
   color: white;
-  padding: 0.5rem 1rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -19,7 +18,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
   display: flex;
   align-items: center; /* Align items vertically */
-  height: 70px; /* Explicit height */
+  height: 120px; /* Explicit height */
   justify-content: center; /* Center content */
   border: none; /* Ensure no border */
 }
@@ -40,7 +39,6 @@ body {
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1rem;
   flex-wrap: wrap; /* Allow items to wrap */
 }
 
@@ -51,8 +49,8 @@ body {
 }
 .logoImage {
   border-radius: 10%; /* Rounded edges for the logo */
-  height: 60px; /* Adjust the height to fit within the navbar */
-  width: 60px; /* Ensure the logo is square for circular rounding */
+  height: 90px; /* Adjust the height to fit within the navbar */
+  width: 90px; /* Ensure the logo is square for circular rounding */
   margin-top: 0.3cm;
 }
 .logoImage:hover {
