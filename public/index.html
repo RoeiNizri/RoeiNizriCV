@@ -33,7 +33,7 @@
   <meta name="apple-mobile-web-app-title" content="Roei Nizri's Website" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="theme-color" content="#ffffff" />
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <!-- Open Graph / Facebook -->
@@ -69,28 +69,6 @@
   <link rel="dns-prefetch" href="//www.linkedin.com">
   <link rel="dns-prefetch" href="//github.com">
 
-  <!-- Structured Data (JSON-LD) for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Person",
-    "name": "Roei Nizri",
-    "alternateName": "רועי נזרי",
-    "jobTitle": "Software Engineer & Full Stack Developer",
-    "url": "https://roeinizri.com",
-    "sameAs": [
-      "https://www.linkedin.com/in/roeinizri",
-      "https://github.com/RoeiNizri"
-    ],
-    "image": "https://roeinizri.com/roei-nizri-2-192x192.png",
-    "description": "Explore Roei Nizri's resume and portfolio. Dive into a comprehensive showcase of skills, projects, and experiences in software engineering, full stack development, blockchain technology, AI-based algorithms, and innovative healthy solutions. Discover detailed insights into Roei's academic achievements, work experience, and proficiency in various programming languages and technologies. רועי נזרי - תוכניתן, מפתח תוכנה ופול סטאק.",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Ort Braude – Braude Academic College of Engineering"
-    }
-  }
-  </script>
-
   <!-- Improved CSS Preloading -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"></noscript>
@@ -115,7 +93,28 @@
       <a href="/help.html" target="_blank" rel="noopener noreferrer">Help</a>
     </div>
   </footer>
-
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Roei Nizri",
+      "alternateName": "רועי נזרי",
+      "jobTitle": "Software Engineer & Full Stack Developer",
+      "url": "https://roeinizri.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/roeinizri",
+        "https://github.com/RoeiNizri"
+      ],
+      "image": "https://roeinizri.com/roei-nizri-2-192x192.png",
+      "description": "Explore Roei Nizri's resume and portfolio. Dive into a comprehensive showcase of skills, projects, and experiences in software engineering, full stack development, blockchain technology, AI-based algorithms, and innovative healthy solutions. Discover detailed insights into Roei's academic achievements, work experience, and proficiency in various programming languages and technologies. רועי נזרי - תוכניתן, מפתח תוכנה ופול סטאק.",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Ort Braude – Braude Academic College of Engineering"
+      }
+    }
+    </script>
+  
   <!-- JavaScript to scroll to top -->
   <script>
     window.addEventListener('load', function() {
