@@ -11,12 +11,12 @@ function Projects() {
     <section className={styles.projects}>
       <div className={styles.container}>
         <h2>Portfolio</h2>
-        
-        {/* Kids' Playground Project */}
+
+        {/* Message Encryption System */}
         <div className={styles.project}>
-          <h3>Kids&apos; Playground Written in OpenGL</h3>
-          <p>Created an interactive kids&apos; park using OpenGL, incorporating animations, enhanced textures, and various visual effects for an improved user experience.</p>
-          <a href="https://github.com/RoeiNizri/MyProjects/tree/master/OpenGL%20Project%20Kids%20Park" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <h3>Message Encryption System</h3>
+          <p>Designed a secure system for encrypting messages using a combination of SALSA20, RSA, and EC ELGAMAL encryption algorithms to ensure data confidentiality and integrity.</p>
+          <a href="https://github.com/RoeiNizri/MyProjects/tree/master/Message%20Encryption" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
 
         {/* Drinking System Management Application */}
@@ -24,6 +24,20 @@ function Projects() {
           <h3>Mini Project Application for Managing a Drinking System</h3>
           <p>Developed a full-stack application for managing a drinking machine system, integrating database management with frontend and backend development.</p>
           <a href="https://github.com/RoeiNizri/MyProjects/tree/master/Application%20for%20Managing%20a%20Drinking%20System" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+       {/* Minefield Game */}
+                <div className={styles.project}>
+          <h3>Minefield Game</h3>
+          <p>Developed a Java-based object-oriented programming Minefield game, focusing on game logic, graphical user interface, and user experience enhancements.</p>
+          <a href="https://github.com/RoeiNizri/MyProjects/tree/master/Minefield%20Game" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        {/* Kids' Playground Project */}
+        <div className={styles.project}>
+          <h3>Kids&apos; Playground Written in OpenGL</h3>
+          <p>Created an interactive kids&apos; park using OpenGL, incorporating animations, enhanced textures, and various visual effects for an improved user experience.</p>
+          <a href="https://github.com/RoeiNizri/MyProjects/tree/master/OpenGL%20Project%20Kids%20Park" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
 
         {/* Restaurant and Shell Menu Programming */}
@@ -40,13 +54,6 @@ function Projects() {
           <a href="https://github.com/RoeiNizri/MyProjects/tree/master/Student%20Management%20System%20Using%20Files" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
 
-        {/* Minefield Game */}
-        <div className={styles.project}>
-          <h3>Minefield Game</h3>
-          <p>Developed a Java-based object-oriented programming Minefield game, focusing on game logic, graphical user interface, and user experience enhancements.</p>
-          <a href="https://github.com/RoeiNizri/MyProjects/tree/master/Minefield%20Game" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-
         {/* MDP Search Algorithm */}
         <div className={styles.project}>
           <h3>MDP Search Algorithm - Artificial Intelligence</h3>
@@ -60,14 +67,7 @@ function Projects() {
           <p>Conducted a data mining project to analyze and extract meaningful patterns from large datasets, utilizing advanced data mining techniques.</p>
           <a href="https://github.com/RoeiNizri/MyProjects/tree/master/Digress" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-
-        {/* Message Encryption System */}
-        <div className={styles.project}>
-          <h3>Message Encryption System</h3>
-          <p>Designed a secure system for encrypting messages using a combination of SALSA20, RSA, and EC ELGAMAL encryption algorithms to ensure data confidentiality and integrity.</p>
-          <a href="https://github.com/RoeiNizri/MyProjects/tree/master/Message%20Encryption" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-
+        
         {/* Real-Time Programming Game */}
         <div className={styles.project}>
           <h3>Real-Time Programming Game</h3>
