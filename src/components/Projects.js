@@ -40,6 +40,17 @@ function Projects() {
           <a href="https://github.com/RoeiNizri/MyProjects/tree/master/OpenGL%20Project%20Kids%20Park" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
 
+          {/* Web */}
+          <div className={styles.project}>
+          <h3>Personal Website Using React</h3>
+          <p>Developed a responsive personal website (roeinizri.com) using React,
+          showcasing a professional portfolio and resume. The website is designed with a focus on
+          performance, accessibility, and user-friendly navigation, and is compatible with various devices,
+          including mobile phones. Leveraged organic marketing techniques to achieve a high search ranking,
+          appearing in the opening third on Google.</p>
+          <a href="https://github.com/RoeiNizri/RoeiNizriCV" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
         {/* Restaurant and Shell Menu Programming */}
         <div className={styles.project}>
           <h3>Restaurant Shell Menu Programming &amp; ADT Programming</h3>

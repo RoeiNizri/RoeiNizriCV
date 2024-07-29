@@ -28,6 +28,12 @@ html, body {
   padding-top: 2rem;
 }
 
+/* Class for italic text */
+.italic {
+  font-style: italic;
+  display: inline-block; /* Ensure the border appears only under the text */
+}
+
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
