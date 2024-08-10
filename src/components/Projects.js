@@ -25,7 +25,7 @@ function Projects() {
 <div className={styles.project}>
   <h3>BTS - Blockchain Trading System</h3>
   <p>Developed a demo trading system for cryptocurrencies, utilizing React for the frontend and implementing TradingView for real-time charts. The system allows users to perform transactions in BTC and ETH with a starting virtual balance of $1 million.</p>
-  <a href="https://roeinizri.com/bts" target="_blank" rel="noopener noreferrer">Website</a>
+  <a href="https://roeinizri.com/BTS/" target="_blank" rel="noopener noreferrer">Website</a>
 </div>
 </a>
 
