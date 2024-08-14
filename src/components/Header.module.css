@@ -15,7 +15,6 @@ html, body {
 .header {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   background: linear-gradient(135deg, #000000 -20%, #ffeb3b 100%);
   color: #ffeb3b;
   overflow: hidden;
@@ -47,6 +46,8 @@ html, body {
   animation: slideInLeft 1s ease-in-out;
   color: white;
   font-weight: bold;
+  animation: fadeInSlideUp 2s ease-in-out forwards; /* Fade in and slide up animation */
+  
 }
 
 .header .subtitle {
@@ -54,6 +55,7 @@ html, body {
   margin-bottom: 1rem;
   font-family: 'Roboto', sans-serif;
   color: #ffeb3b;
+  animation: fadeInSlideUp 2.5s ease-in-out forwards;
 }
 
 .header .animatedSubtitle {
@@ -70,27 +72,49 @@ html, body {
 .header .highlight {
   font-weight: bold;
   font-size: 2rem;
-  color: white;
-  background: linear-gradient(0deg, #000000, #ffeb3b);
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  animation: pulse 1.5s infinite;
-  text-align: center;
-  display: flex;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ffeb3b, #ff6f00);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  animation: pulseButton 1.5s infinite;
 }
+
+.header .highlight:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
 .header .icon {
-  font-size: 2rem; /* Adjust the icon size */
-  margin-left: 0.5rem; /* Add space between the text and the icon */
-  animation: spin 2s linear infinite; /* Add spin animation */
+  font-size: 2rem;
+  margin-left: 1rem;
+  animation: spin 2s linear infinite;
 }
+
 .highlighted {
   font-weight: bold;
 }
+
+.headerBox {
+  position: relative;
+  width: 80%; /* Make the box smaller by reducing the width */
+  max-width: 600px; /* Ensure it doesn't get too large on wider screens */
+  background: linear-gradient(0deg, #000000 0%, #ffeb3b 111%);
+  color: #ffeb3b;
+  overflow: hidden;
+  border-radius: 15px;
+  text-align: center;
+  padding: 1.5rem; /* Slightly reduce padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto; /* Center the box and add space from the top */
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -145,6 +169,43 @@ html, body {
     transform: translateY(0);
   }
 }
+
+@keyframes backgroundShift {
+  0% {
+    background: linear-gradient(135deg, #ffeb3b -20%, #ff6f00 100%);
+  }
+  100% {
+    background: linear-gradient(135deg, #ff6f00 -20%, #ffeb3b 100%);
+  }
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseButton {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(255, 111, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 111, 0, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(255, 111, 0, 0.5);
+  }
+}
+
+
 /* Responsive Design */
 @media (max-width: 600px) {
   .header {
@@ -166,6 +227,7 @@ html, body {
   }
   .header .highlight {
     font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
   }
   .header .icon {
     font-size: 1.5rem;
@@ -186,6 +248,7 @@ html, body {
   }
   .header .highlight {
     font-size: 1.25rem;
+    padding: 0.5rem 1rem;
   }
   .header .icon {
     font-size: 1.25rem;
