@@ -8,9 +8,9 @@ function Popup() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 30000); // Show pop-up after 30 seconds
+    }, 15000); // Show pop-up after 30 seconds
 
-    return () => clearTimeout(timer); // Cleanup timeout on component unmount
+    return () => clearTimeout(timer);
   }, []);
 
   const closePopup = () => {
@@ -21,9 +21,7 @@ function Popup() {
     showPopup && (
       <div className="popup">
         <div className="popup-content">
-          <button className="close-btn" onClick={closePopup} aria-label="Close Popup">
-            &times;
-          </button>
+          <span className="close-btn" onClick={closePopup} role="button" tabIndex="0" onKeyPress={closePopup}>&times;</span>
           <p className="popup-text">Like it? Share it!</p> {/* Add the text */}
           <img src={popupImage} alt="Popup Content" className="popup-image" /> {/* Use the imported image */}
         </div>
