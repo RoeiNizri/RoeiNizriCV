@@ -3,44 +3,44 @@
   "name": "Blockchain Trading System",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "BTS/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "BTS-192x192.png",
+      "src": "BTS/BTS-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "BTS-512x512.png",
+      "src": "BTS/BTS-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/BTS/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "description": "Explore Roei Nizri's BTS Project, focusing on advanced blockchain technology and smart contracts. Discover the innovative solutions and approaches used in this project, along with a detailed overview of its features and capabilities.",
   "orientation": "portrait-primary",
   "lang": "en-US",
-  "scope": "/",
+  "scope": "/BTS/",
   "screenshots": [
     {
-      "src": "screenshot1.png",
+      "src": "BTS/screenshot1.png",
       "sizes": "640x480",
       "type": "image/png",
       "label": "Homepage"
     },
     {
-      "src": "screenshot2.png",
+      "src": "BTS/screenshot2.png",
       "sizes": "640x480",
       "type": "image/png",
       "label": "Projects Page"
     },
     {
-      "src": "screenshot3.png",
+      "src": "BTS/screenshot3.png",
       "sizes": "640x480",
       "type": "image/png",
       "label": "Contact Page"
@@ -79,42 +79,31 @@
       "name": "View Projects",
       "short_name": "Projects",
       "description": "Quickly navigate to the projects page.",
-      "url": "https://roeinizri.com/#/projects"
+      "url": "https://roeinizri.com/BTS/#/projects"
     },
     {
       "name": "Contact Me",
       "short_name": "Contact",
       "description": "Get in touch with Roei Nizri.",
-      "url": "https://roeinizri.com/#/contact"
+      "url": "https://roeinizri.com/BTS/#/contact"
     }
   ],
   "features": [
     {
       "name": "Offline Mode",
       "description": "Access the portfolio even when you are offline.",
-      "url": "https://roeinizri.com/#/general"
+      "url": "https://roeinizri.com/BTS/#/general"
     },
     {
       "name": "Dark Mode",
       "description": "Switch to a dark theme for a comfortable viewing experience in low light.",
-      "url": "https://roeinizri.com/#/"
+      "url": "https://roeinizri.com/BTS/#/"
     }
   ],
   "files": {
-    "main.css": "/static/css/main.b45729b2.css",
-    "main.js": "/static/js/main.2227b28d.js",
-    "static/js/453.624f2d45.chunk.js": "/static/js/453.624f2d45.chunk.js",
-    "static/media/logo512.png": "/static/media/logo512.308d3af7e0b7c1b29ea0.png",
-    "static/media/logo192.png": "/static/media/logo192.14785ed38f3c04c191da.png",
-    "static/media/RoeiNizriImg.jpg": "/static/media/RoeiNizriImg.b3586faf00975de05150.jpg",
-    "static/media/popup.png": "/static/media/popup.3e8a7a155d5ed6612ec0.png",
-    "index.html": "/index.html",
-    "main.b45729b2.css.map": "/static/css/main.b45729b2.css.map",
-    "main.2227b28d.js.map": "/static/js/main.2227b28d.js.map",
-    "453.624f2d45.chunk.js.map": "/static/js/453.624f2d45.chunk.js.map"
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.b45729b2.css",
-    "static/js/main.2227b28d.js"
+  "/index.html"
   ]
 }
