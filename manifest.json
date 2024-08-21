@@ -42,13 +42,13 @@
     },
     {
       "src": "screenshot2.png",
-      "sizes": "1914x870",
+      "sizes": "1920x869",
       "type": "image/png",
       "label": "Projects Page"
     },
     {
       "src": "screenshot3.png",
-      "sizes": "1914x870",
+      "sizes": "1920x869",
       "type": "image/png",
       "label": "Contact Page"
     }
