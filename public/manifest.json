@@ -1,6 +1,7 @@
 {
   "short_name": "Roei Nizri",
   "name": "Roei Nizri's Website",
+  "id": "/",
   "icons": [
     {
       "src": "favicon-16x16.png",
