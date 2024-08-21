@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Popup.css'; // Ensure this matches the actual case of the filename
-import popupImage from './popup.png'; // Import the image
+import popupImage from '../popup.png'; // Import the image
 
 function Popup() {
   const [showPopup, setShowPopup] = useState(false);
