@@ -41,7 +41,7 @@ html, body {
 
 .header .title {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-family: 'Montserrat', sans-serif;
   animation: slideInLeft 1s ease-in-out;
   color: white;
@@ -211,10 +211,11 @@ html, body {
   .header {
     min-height: auto;
     padding: 1rem;
-    margin-top: 50px;
+    margin-top: 80px;
   }
   .header .title {
     font-size: 2.5rem;
+    margin-bottom: 0.75rem;
   }
   .header .subtitle {
     font-size: 1.5rem;
