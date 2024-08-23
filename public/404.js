@@ -1,3 +1,4 @@
-setTimeout(function() {
+setTimeout(() => {
     window.location.href = window.location.origin;
-}, 5000); // 10 seconds delay
+  }, 10000); // 10 seconds delay
+  

@@ -13,23 +13,6 @@ function App() {
   const location = useLocation();
 
   return (
- /*       <!Structured Data for Logo   
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "url": "https://roeinizri.com",
-        "logo": "https://roeinizri.com/android-chrome-512x512.png",
-        "favicon": "https://roeinizri.com/favicon.ico",
-        "name": "Roei Nizri",
-        "sameAs": [
-          "https://www.linkedin.com/in/roeinizri",
-          "https://github.com/roeinizri",
-          "https://www.instagram.com/roeinizri/",
-          "https://www.facebook.com/roeinizri/"
-        ]
-      }
-*/
     <div className="App">
       <Navbar />
       <AnimatePresence>

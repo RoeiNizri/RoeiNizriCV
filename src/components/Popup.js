@@ -8,10 +8,10 @@ function Popup() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 15000); // Show pop-up after 30 seconds
-
+    }, 15000); // Show pop-up after 15 seconds
+  
     return () => clearTimeout(timer);
-  }, []);
+  }, []);  
 
   const closePopup = () => {
     setShowPopup(false);
