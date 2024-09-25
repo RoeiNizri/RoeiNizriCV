@@ -11,6 +11,21 @@ function Projects() {
     <section className={styles.projects}>
       <div className={styles.container}>
         <h2>Portfolio</h2>
+         {/* Blockchain Trading System */}
+<a href="https://roeinizri.github.io/Blockchain/" target="_blank" rel="noopener noreferrer">
+<div className={styles.project}>
+  <h3>BTS - Blockchain Trading System</h3>
+  <p>Developed a demo trading system for cryptocurrencies, utilizing React for the frontend and implementing TradingView for real-time charts. The system allows users to perform transactions in BTC and ETH with a starting virtual balance of $1 million.</p>
+  <a href="https://roeinizri.com/BTS/" target="_blank" rel="noopener noreferrer">Website</a>
+</div>
+</a>
+
+ {/* RR-WEB */}
+<div className={styles.project}>
+  <h3>R & R - Net</h3>
+  <p>rr-web.net is a premier web development company dedicated to crafting stunning landing pages and image-rich websites for businesses and influencers. We specialize in delivering high-quality, customized web solutions that not only captivate users but also drive engagement and conversions. Our expertise lies in creating visually striking designs combined with seamless user experiences, ensuring that your online presence stands out.</p>
+  <a href="https://rr-web.net/" target="_blank" rel="noopener noreferrer">Website</a>
+</div>
        
         {/* Message Encryption System */}
         <a href="https://github.com/RoeiNizri/MyProjects/tree/master/Message%20Encryption" target="_blank" rel="noopener noreferrer">
@@ -19,15 +34,6 @@ function Projects() {
           <p>Designed a secure system for encrypting messages using a combination of SALSA20, RSA, and EC ELGAMAL encryption algorithms to ensure data confidentiality and integrity.</p>
         </div>
         </a>
-
-    {/* Blockchain Trading System */}
-<a href="https://roeinizri.github.io/Blockchain/" target="_blank" rel="noopener noreferrer">
-<div className={styles.project}>
-  <h3>BTS - Blockchain Trading System</h3>
-  <p>Developed a demo trading system for cryptocurrencies, utilizing React for the frontend and implementing TradingView for real-time charts. The system allows users to perform transactions in BTC and ETH with a starting virtual balance of $1 million.</p>
-  <a href="https://roeinizri.com/BTS/" target="_blank" rel="noopener noreferrer">Website</a>
-</div>
-</a>
 
         {/* Drinking System Management Application */}
         <a href="https://github.com/RoeiNizri/MyProjects/tree/master/Application%20for%20Managing%20a%20Drinking%20System" target="_blank" rel="noopener noreferrer">
