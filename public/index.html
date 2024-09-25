@@ -33,7 +33,7 @@
   <meta name="apple-mobile-web-app-title" content="Roei Nizri's Website" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="theme-color" content="#ffffff" />
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://bringthemhomenow.net 'unsafe-inline';">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <!-- Open Graph / Facebook -->
@@ -103,6 +103,19 @@
       <a href="https://roeinizri.tawk.help" target="_blank" rel="noopener noreferrer">Help</a>
     </div>
   </footer>
+  <div id="bthn" lang="en"></div><script>
+    (function () {
+       var script = document.createElement("script");
+       script.type = "text/javascript";
+       script.src = "https://bringthemhomenow.net/1.1.0/hostages-ticker.js";
+       script.setAttribute(
+         "integrity",
+         "sha384-DHuakkmS4DXvIW79Ttuqjvl95NepBRwfVGx6bmqBJVVwqsosq8hROrydHItKdsne"
+       );
+       script.setAttribute("crossorigin", "anonymous");
+       document.getElementsByTagName("head")[0].appendChild(script);
+     })();
+    </script>
   <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
