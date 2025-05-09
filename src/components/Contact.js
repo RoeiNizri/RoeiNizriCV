@@ -6,9 +6,11 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import styles from './Contact.module.css';
 import profilePicture from '../RoeiNizriImg.jpg'; // Adjust the path as needed
 import downloadIcon from '../logo512.png'; // Import the new image
-import bachelorImage from '../BachelorDegree.jpg'; 
+import bachelorImage from '../BachelorDegree.jpg';
+import RoeiNizriResume from '../Roei-Nizri-CV.pdf';
 
-const googleDriveLink = "https://drive.google.com/file/d/1SvNdWAabkUPODBYNBJIHJb0KOmNmCKsy/view";
+
+// const googleDriveLink = "https://drive.google.com/file/d/1SvNdWAabkUPODBYNBJIHJb0KOmNmCKsy/view";
 
 function Contact() {
   return (
@@ -45,8 +47,9 @@ function Contact() {
         <div className={styles.resumeContainer}>
           <div className={styles.resumeSection}>
             <h3>Download My Resume</h3>
+            {/* Optional: replace with Google Drive if needed href={googleDriveLink} download="RoeiNizri_Resume.pdf */}
             <p>
-              <a href={googleDriveLink} download="RoeiNizri_Resume.pdf">
+              <a href={RoeiNizriResume} target="_blank" rel="noopener noreferrer">
                 <img src={downloadIcon} alt="Download Resume" className={styles.downloadIcon} />
               </a>
             </p>
