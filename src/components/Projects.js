@@ -1,5 +1,6 @@
 import React from 'react'; // Import React library
-import styles from './Projects.module.css'; // Import CSS module for styling
+import styles from './Projects.module.css';
+import Project from '../Capstone Project Phase B-24-2-R-4.pdf';  
 
 /**
  * Projects Component
@@ -11,8 +12,16 @@ function Projects() {
     <section className={styles.projects}>
       <div className={styles.container}>
         <h2>Portfolio</h2>
+        {/* QR Scan Project */}
+        <a href="https://qrscan.rr-web.net/" target="_blank" rel="noopener noreferrer">
+          <div className={styles.project}>
+            <h3>QR Scan Project</h3>
+            <p>Built a QR code scanning and generation tool using modern web technologies. This project demonstrates seamless scanning capabilities and real-time QR code creation, focusing on usability and performance optimization.</p>
+          </div>
+        </a>
+
          {/* Blockchain Trading System */}
-<a href="https://roeinizri.com/BTS/" target="_blank" rel="noopener noreferrer">
+        <a href="https://bts.dr-brokers.com/" target="_blank" rel="noopener noreferrer">
 <div className={styles.project}>
   <h3>BTS - Blockchain Trading System</h3>
   <p>Developed a demo trading system for cryptocurrencies, utilizing React for the frontend and implementing TradingView for real-time charts. The system allows users to perform transactions in BTC and ETH with a starting virtual balance of $1 million.</p>
@@ -26,6 +35,20 @@ function Projects() {
   <p>rr-web.net is a premier web development company dedicated to crafting stunning landing pages and image-rich websites for businesses and influencers. We specialize in delivering high-quality, customized web solutions that not only captivate users but also drive engagement and conversions. Our expertise lies in creating visually striking designs combined with seamless user experiences, ensuring that your online presence stands out.</p>
 </div>
 </a>
+
+        {/* Research Project – Anomaly Detection Using Graph Diffusion Models */}
+        <a href={Project} target="_blank" rel="noopener noreferrer">
+          <div className={styles.project}>
+            <h3>Research – Anomaly Detection Using Graph Diffusion Models</h3>
+            <p>
+              This research explores anomaly detection in citation graphs using a combination of Graph Autoencoders (GAE) and
+              Denoising Diffusion Probabilistic Models (DDPM). It introduces a novel approach for generating synthetic anomaly nodes
+              to combat label imbalance and significantly improve detection accuracy (AUROC ~0.98). Evaluated on Cora and CiteSeer datasets,
+              using PyTorch Geometric, diffusion models, and Google Colab.
+            </p>
+          </div>
+        </a>
+
        
         {/* Message Encryption System */}
         <a href="https://github.com/RoeiNizri/MyProjects/tree/master/Message%20Encryption" target="_blank" rel="noopener noreferrer">

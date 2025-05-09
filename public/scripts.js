@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var structuredData = {
+document.addEventListener("DOMContentLoaded", function () {
+  const structuredData = {
     "@context": "http://schema.org",
     "@type": "Person",
     "name": "רועי נזרי",
@@ -18,16 +18,32 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
 
-  var script = document.createElement('script');
-  script.type = 'application/ld+json';
-  script.text = JSON.stringify(structuredData);
-  document.head.appendChild(script);
+  if (!document.querySelector('script[type="application/ld+json"]')) {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+    console.log('Structured data added successfully.');
+  }
 });
-const timeout = setTimeout(function() {
-    window.location.reload();
-  }, 5000);
-  
-  // Clear the timeout if the page loads successfully
-  window.onload = function() {
+
+let reloadAttempts = sessionStorage.getItem('reloadAttempts') || 0;
+
+if (reloadAttempts < 3) {
+  const timeout = setTimeout(() => {
+    if (!document.querySelector('#root')) {
+      console.warn('Critical elements not loaded. Reloading...');
+      reloadAttempts++;
+      sessionStorage.setItem('reloadAttempts', reloadAttempts);
+      window.location.reload();
+    }
+  }, 8000); // Adjust timeout duration if needed
+
+  window.onload = () => {
     clearTimeout(timeout);
+    sessionStorage.setItem('reloadAttempts', 0); // Reset attempts on successful load
+    console.log('Page loaded successfully.');
   };
+} else {
+  console.error('Max reload attempts reached. Please check your connection.');
+}

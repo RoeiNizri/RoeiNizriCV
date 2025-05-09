@@ -5,7 +5,7 @@ import styles from './Skills.module.css'; // Import CSS module for styling
  * Skills Component
  * This component renders a section listing various skills, grouped into categories such as
  * programming languages, web development, database management, AI & ML, graphics programming,
- * software development, problem solving, and soft skills.
+ * software development, problem solving, soft skills, blockchain development, and automation.
  */
 function Skills() {
   return (
@@ -17,7 +17,7 @@ function Skills() {
             <strong>Programming Languages:</strong> I speak the languages of the digital world fluently – <strong>C, C#, Java, JavaScript, SQL, Python,</strong> and even <strong>Assembly</strong>. Each project is a new adventure in these languages!
           </li>
           <li>
-            <strong>Web Development:</strong> Crafting beautiful, responsive websites with <strong>HTML, CSS</strong>, and <strong>React</strong> I bring server-side magic with <strong>Node.js</strong> to create seamless user experiences.
+            <strong>Web Development:</strong> Crafting beautiful, responsive websites with <strong>HTML, CSS</strong>, and <strong>React</strong>. I bring server-side magic with <strong>Node.js</strong> to create seamless user experiences.
           </li>
           <li>
             <strong>Database Management:</strong> Whether it’s <strong>MongoDB</strong> or <strong>SQL</strong>, I know how to store, manage, and retrieve data efficiently to power robust applications.
@@ -27,6 +27,12 @@ function Skills() {
           </li>
           <li>
             <strong>Graphics Programming:</strong> Using <strong>OpenGL</strong>, I transform code into stunning visual experiences, developing interactive and graphical applications that are both functional and beautiful.
+          </li>
+          <li>
+            <strong>Blockchain Development:</strong> I develop secure and scalable <strong>smart contracts on Ethereum using Solidity</strong>. With hands-on experience in deploying DApps, managing gas optimizations, and working with <strong>web3.js</strong>, I bring decentralized solutions to life.
+          </li>
+          <li>
+            <strong>Automation:</strong> I specialize in automating business workflows using <strong>UiPath</strong> and <strong>Make (formerly Integromat)</strong>. From robotic process automation (RPA) to API-based integrations, I streamline processes to improve efficiency and save time.
           </li>
           <li>
             <strong>Software Development:</strong> Full-stack applications are my playground. With expertise in project management using <strong>Git, Excel,</strong> and <strong>Power BI</strong>, I ensure each project is a success from start to finish.

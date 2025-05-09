@@ -33,12 +33,12 @@
   <meta name="apple-mobile-web-app-title" content="Roei Nizri's Website" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="theme-color" content="#ffffff" />
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://bringthemhomenow.net 'unsafe-inline';">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-hash-value' https://bringthemhomenow.net;">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Roei Nizri Resume | Software Engineer & Full Stack Developer" />
-  <meta property="og:description" content="Explore Roei Nizri's resume and portfolio. Dive into a comprehensive showcase of skills, projects, and experiences in software engineering, full stack development, blockchain technology, AI-based algorithms, and innovative healthy solutions. Discover detailed insights into Roei's academic achievements, work experience, and proficiency in various programming languages and technologies. רועי נזרי - תוכניתן, מפתח תוכנה ופול סטאק." />
+  <meta property="og:title" content="Roei Nizri | Software Engineer & Full Stack Developer" />
+  <meta property="og:description" content="Explore Roei Nizri's portfolio. Dive into a comprehensive showcase of skills, projects, and experiences in software engineering, full stack development, blockchain technology, AI-based algorithms, and innovative healthy solutions. Discover detailed insights into Roei's academic achievements, work experience, and proficiency in various programming languages and technologies. רועי נזרי - תוכניתן, מפתח תוכנה ופול סטאק." />
   <meta property="og:image" content="https://roeinizri.com/roeinizri-192x192.png" />
   <meta property="og:url" content="https://roeinizri.com" />
   <meta property="og:type" content="website" />
@@ -48,7 +48,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Roei Nizri Resume | Software Engineer & Full Stack Developer" />
-  <meta name="twitter:description" content="Explore Roei Nizri's resume and portfolio. Dive into a comprehensive showcase of skills, projects, and experiences in software engineering, full stack development, blockchain technology, AI-based algorithms, and innovative healthy solutions. Discover detailed insights into Roei's academic achievements, work experience, and proficiency in various programming languages and technologies. רועי נזרי - תוכניתן, מפתח תוכנה ופול סטאק." />
+  <meta name="twitter:description" content="Explore Roei Nizri's portfolio. Dive into a comprehensive showcase of skills, projects, and experiences in software engineering, full stack development, blockchain technology, AI-based algorithms, and innovative healthy solutions. Discover detailed insights into Roei's academic achievements, work experience, and proficiency in various programming languages and technologies. רועי נזרי - תוכניתן, מפתח תוכנה ופול סטאק." />
   <meta name="twitter:image" content="https://roeinizri.com/roeinizri-192x192.png" />
   
   <!-- Google Fonts -->
@@ -103,19 +103,20 @@
       <a href="https://roeinizri.tawk.help" target="_blank" rel="noopener noreferrer">Help</a>
     </div>
   </footer>
-  <div id="bthn" lang="en"></div><script>
-    (function () {
-       var script = document.createElement("script");
-       script.type = "text/javascript";
-       script.src = "https://bringthemhomenow.net/1.1.0/hostages-ticker.js";
-       script.setAttribute(
-         "integrity",
-         "sha384-DHuakkmS4DXvIW79Ttuqjvl95NepBRwfVGx6bmqBJVVwqsosq8hROrydHItKdsne"
-       );
-       script.setAttribute("crossorigin", "anonymous");
-       document.getElementsByTagName("head")[0].appendChild(script);
-     })();
-    </script>
+  <div id="bthn" lang="en"></div>
+  <script>
+   (function () {
+     var script = document.createElement("script");
+     script.type = "text/javascript";
+     script.src = "https://bringthemhomenow.net/1.3.0/hostages-ticker.js";
+     script.setAttribute(
+       "integrity",
+       "sha384-MmP7bD5QEJWvJccg9c0lDnn3LjjqQWDiRCxRV+NU8hij15icuwb29Jfw1TqJwuSv"
+     );
+     script.setAttribute("crossorigin", "anonymous");
+     document.getElementsByTagName("head")[0].appendChild(script);
+   })();
+  </script>
   <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

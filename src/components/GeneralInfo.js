@@ -15,7 +15,7 @@ function GeneralInfo() {
         <h2>Education</h2>
         <div className={styles.section}>
           <h3>Ort Braude – Braude Academic College of Engineering</h3>
-          <p>2020-2024: BSc in Software Engineering – Currently in my fourth year, and I&apos;m excited to graduate in March 2025.
+          <p>2020-2025: BSc in Software Engineering – Graduated in March 2025.
           <span className={styles.italic}>My journey here has been a mix of rigorous learning and hands-on projects that have honed my skills and passion for technology.</span></p>
           <h3>High School Education - Ort Motzkin High School</h3>
           <p>2013-2015: <span className={styles.italic}>Achieved full matriculation in Computer Science and Physics. I completed 10 study units in Computer Science and 5 study units in Physics, which laid a solid foundation for my engineering studies.</span></p>
@@ -36,15 +36,22 @@ function GeneralInfo() {
         {/* Work Experience Section */}
         <h2>Work Experience</h2>
         <div className={styles.section}>
+          <h3>PlasBit – Blockchain Developer</h3>
+          <p>2025 - Present</p>
+          <p><span className={styles.italic}>Currently working at PlasBit as a Fullstack & Blockchain Developer, where I contribute to the development of secure and scalable blockchain-based financial tools. My responsibilities include building frontend interfaces with React and managing backend services using NestJS and Node.js.</span></p>
+
           <h3>Ten Gas Station</h3>
           <p>2019 - 2020</p>
           <p><span className={styles.italic}>Provided top-notch customer service, handled transactions efficiently, and maintained a clean and safe environment. This role taught me the value of responsibility and customer satisfaction.</span></p>
+
           <h3>Greg, Landwer, Biga Barista -&gt; Bar Manager</h3>
           <p>2017 - 2018</p>
           <p><span className={styles.italic}>Started as a Barista and quickly rose to Bar Manager. I managed staff, ensured high-quality customer service, and maintained inventory and supplies. This experience strengthened my leadership and organizational skills.</span></p>
+
           <h3>Nir Ezion Food Company</h3>
           <p>2012 - 2014</p>
           <p><span className={styles.italic}>Worked in various capacities including production and quality control, which taught me the importance of attention to detail and maintaining high standards.</span></p>
+
           <h3>Coca Cola</h3>
           <p>2012 - 2014</p>
           <p><span className={styles.italic}>Handled logistics and supply chain management, ensuring timely delivery of products. This role enhanced my problem-solving skills and ability to work under pressure.</span></p>

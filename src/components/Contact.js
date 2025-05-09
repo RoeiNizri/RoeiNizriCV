@@ -6,8 +6,9 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import styles from './Contact.module.css';
 import profilePicture from '../RoeiNizriImg.jpg'; // Adjust the path as needed
 import downloadIcon from '../logo512.png'; // Import the new image
+import bachelorImage from '../BachelorDegree.jpg'; 
 
-const googleDriveLink = "https://drive.google.com/file/d/15oYohbsLVEd8UBZfw6Dh61pzELFbPARI/view?usp=drive_link";
+const googleDriveLink = "https://drive.google.com/file/d/1SvNdWAabkUPODBYNBJIHJb0KOmNmCKsy/view";
 
 function Contact() {
   return (
@@ -41,13 +42,19 @@ function Contact() {
             text="054-694-5333"
           />
         </div>
-        <div className={styles.resumeSection}>
-          <h3>Download My Resume</h3>
-          <p>
-            <a href={googleDriveLink} download="RoeiNizri_Resume.pdf">
-              <img src={downloadIcon} alt="Download Resume" className={styles.downloadIcon} />
-            </a>
-          </p>
+        <div className={styles.resumeContainer}>
+          <div className={styles.resumeSection}>
+            <h3>Download My Resume</h3>
+            <p>
+              <a href={googleDriveLink} download="RoeiNizri_Resume.pdf">
+                <img src={downloadIcon} alt="Download Resume" className={styles.downloadIcon} />
+              </a>
+            </p>
+          </div>
+
+          <div className={styles.resumeSection}>
+            <img src={bachelorImage} alt="Bachelor&apos;s Degree" className={styles.bachelorImage} />
+          </div>
         </div>
       </div>
     </section>
