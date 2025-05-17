@@ -1,6 +1,5 @@
-import React from 'react'; // Import React library
 import styles from './GeneralInfo.module.css'; // Import CSS module for styling
-
+import bachelorImage from '../BachelorDegree.jpg';
 /**
  * GeneralInfo Component
  * This component renders general information including education, courses,
@@ -17,6 +16,9 @@ function GeneralInfo() {
           <h3>Ort Braude – Braude Academic College of Engineering</h3>
           <p>2020-2025: BSc in Software Engineering – Graduated in March 2025.
           <span className={styles.italic}>My journey here has been a mix of rigorous learning and hands-on projects that have honed my skills and passion for technology.</span></p>
+          <div className={styles.resumeSection}>
+            <img src={bachelorImage} alt="Bachelor&apos;s Degree" className={styles.bachelorImage} />
+          </div>
           <h3>High School Education - Ort Motzkin High School</h3>
           <p>2013-2015: <span className={styles.italic}>Achieved full matriculation in Computer Science and Physics. I completed 10 study units in Computer Science and 5 study units in Physics, which laid a solid foundation for my engineering studies.</span></p>
           <p><span className={styles.italic}>During high school, I provided assistance to struggling students and achieved notable leadership milestones.</span></p>

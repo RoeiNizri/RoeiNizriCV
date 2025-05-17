@@ -24,21 +24,6 @@
   margin-top: 2rem;
 }
 
-
-.bachelorImage {
-  width: 100%;
-  max-width: 260px; /* <-- bigger now */
-  border-radius: 10px;
-  margin-top: 0.5rem; /* Less space after title */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.bachelorImage:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 235, 59, 0.6);
-}
-
 .contact::before {
   content: '';
   position: absolute;

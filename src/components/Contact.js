@@ -6,7 +6,6 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import styles from './Contact.module.css';
 import profilePicture from '../RoeiNizriImg.jpg'; // Adjust the path as needed
 import downloadIcon from '../logo512.png'; // Import the new image
-import bachelorImage from '../BachelorDegree.jpg';
 import RoeiNizriResume from '../Roei-Nizri-CV.pdf';
 
 
@@ -53,10 +52,6 @@ function Contact() {
                 <img src={downloadIcon} alt="Download Resume" className={styles.downloadIcon} />
               </a>
             </p>
-          </div>
-
-          <div className={styles.resumeSection}>
-            <img src={bachelorImage} alt="Bachelor&apos;s Degree" className={styles.bachelorImage} />
           </div>
         </div>
       </div>
