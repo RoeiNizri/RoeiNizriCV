@@ -115,6 +115,12 @@ html, body {
   transform: scale(1.05);
 }
 
+.logoc {
+  height: 40px;
+  width: auto;
+  margin: 2px;
+  vertical-align: middle;
+}
 .headerBox {
   position: relative;
   width: 80%; /* Make the box smaller by reducing the width */

@@ -34,7 +34,7 @@ function Header() {
 
 
         <p className={styles.description}>
-          Currently, I&apos;m working at<a href="https://plasbit.com" target="_blank" rel="noopener noreferrer" className={styles.highlighted}><img src={plasbitLogo} alt="PlasBit Logo" className={styles.logo} />PlasBit </a>
+          Currently, I&apos;m working at<a href="https://plasbit.com" target="_blank" rel="noopener noreferrer" className={styles.highlighted}> PlasBit<img src={plasbitLogo} alt="PlasBit Logo" className={styles.logoc} /> </a>
           a leading cryptocurrency exchange platform that simplifies the trading experience by enabling users to buy, sell, transfer, and securely store both Bitcoin and altcoins.
           PlasBit is committed to providing a safe and trustworthy crypto exchange platform, holding 100% of customer assets in cold storage, ensuring funds are responsibly backed 1:1 and accessible at customers&apos; convenience.
         </p>
