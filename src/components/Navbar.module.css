@@ -2,26 +2,28 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #000000 -20%, #ffeb3b 100%);
+  background: linear-gradient(145deg, #0d0d0d, #2b2b2b);
   padding-top: 100px;
-    /* Add padding equal to navbar height */
-  margin: 0; /* Ensure no margin */
-  min-height: 100vh; /* Ensure body covers full height */
+  min-height: 100vh;
 }
+
 /* Adjust specific section styles if needed */
 section {
-  padding-top: 70px; /* Adjust for the navbar height if sections are affected */
+  padding: 3rem 1.5rem;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    border-radius: 12px;
+    margin: 5rem auto;
+    max-width: 1000px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
+
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
   height: 120px;
-    background-color: rgba(0, 0, 0, 0.4);
-    /* fallback for mobile */
+  background: rgba(255, 235, 59, 0.1);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-    /* iOS Safari support */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   display: flex;
@@ -31,22 +33,28 @@ section {
 }
 
 .navbar.scrolled {
-  background-color: #ffeb3b; /* Change background color on scroll */
-  color: #000; /* Change text color on scroll */
-  transform: translateY(-10px); /* Slight lift on scroll */
+  background-color: #ffeb3b;
+    /* Change background color on scroll */
+    color: #000;
+    /* Change text color on scroll */
+    transform: translateY(-10px);
+    /* Slight lift on scroll */
 }
 
 .navbar.scrolled .navLink {
-  color: #000; /* Change text color on scroll */
+  color: #000;
+    /* Change text color on scroll */
 }
 
 .navbarContainer {
   display: flex;
-  justify-content: center; /* Center content */
+  justify-content: center;
+    /* Center content */
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-  flex-wrap: wrap; /* Allow items to wrap */
+  flex-wrap: wrap;
+    /* Allow items to wrap */
 }
 
 .logo {
@@ -64,8 +72,8 @@ section {
 }
 
 .logoImage:hover {
-  transform: scale(1.1) rotate(5deg); /* Slight rotation and scale on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 8px 20px rgba(255, 235, 59, 0.6);
 }
 
 .nav {
@@ -99,11 +107,11 @@ section {
 .navLink {
   color: #ffeb3b;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 30px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  background: rgba(255, 255, 255, 0.05);
   transition: 0.3s ease-in-out;
 }
 
@@ -124,28 +132,75 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
   font-weight: bold;
   /* Make font bold on click */
 }
+.navbar.scrolled {
+  background: rgba(255, 235, 59, 0.8);
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.scrolled .navLink {
+  color: #000;
+}
+
+h2 {
+  color: #ffeb3b;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffeb3b;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
 @media (max-width: 768px) {
+  body {
+      padding-top: 150px;
+    }
   .navbar {
-    height: auto; /* Allow height to adjust for content */
+    height: auto;
+      /* Allow height to adjust for content */
   }
+
   .navbarContainer {
-    flex-direction: column; /* Stack items vertically on mobile */
-    align-items: center; /* Center align items */
-    margin-bottom: 1rem; /* Add more space below the nav link */
+    flex-direction: column;
+      /* Stack items vertically on mobile */
+      align-items: center;
+      /* Center align items */
+      margin-bottom: 1rem;
+      /* Add more space below the nav link */
   }
+
   .navList {
-    flex-direction: row; /* Ensure nav items remain in a row */
-    width: 100%; /* Make nav items take full width */
-    align-items: center; /* Center align nav items */
-    flex-wrap: wrap; /* Allow wrapping of items */
-    justify-content: center; /* Center items */
+    flex-direction: row;
+      /* Ensure nav items remain in a row */
+      width: 100%;
+      /* Make nav items take full width */
+      align-items: center;
+      /* Center align nav items */
+      flex-wrap: wrap;
+      /* Allow wrapping of items */
+      justify-content: center;
+      /* Center items */
   }
+
   .navItem {
-    margin: 0.5rem; /* Adjust margin for nav items */
+    margin: 0.5rem;
+      /* Adjust margin for nav items */
   }
+
   .navLink {
-    width: auto; /* Allow nav links to adjust width */
-    text-align: center; /* Center align text */
-    
+    width: auto;
+      /* Allow nav links to adjust width */
+      text-align: center;
+      /* Center align text */
   }
 }
