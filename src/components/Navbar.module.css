@@ -82,71 +82,59 @@ section {
 
 .nav {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .navList {
-  list-style: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  /* Allow wrapping of items */
   justify-content: center;
-  /* Center items */
+  gap: 1.2rem;
 }
 
 .navItem {
-  margin: 0 1rem;
-  transform: perspective(1000px) translateZ(10px);
-  /* 3D perspective effect */
-  transition: transform 0.3s ease;
-}
-
-.navItem:hover {
-  transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
-  /* 3D tilt on hover */
+  perspective: 1000px;
 }
 
 .navLink {
   color: #ffeb3b;
   text-decoration: none;
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 30px;
+  border-radius: 2rem;
   background: rgba(255, 255, 255, 0.05);
-  transition: 0.3s ease-in-out;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(255, 235, 59, 0.2);
+  transform-style: preserve-3d;
 }
 
 .navLink:hover {
   background: #ffeb3b;
   color: #000;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(255, 235, 59, 0.4);
+  transform: translateY(-4px) rotateX(6deg) rotateY(6deg);
+  box-shadow: 0 6px 12px rgba(255, 235, 59, 0.3);
 }
 
 .navLink:active {
-  transform: scale(0.95);
-  /* Slightly shrink on click */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  /* Subtle shadow on click */
+  transform: scale(0.96);
   background-color: #fdd835;
-  /* Slightly darker yellow on click */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   font-weight: bold;
-  /* Make font bold on click */
 }
 
 .navbar.scrolled {
-  background: rgba(255, 235, 59, 0.8);
+  background: rgba(255, 235, 59, 0.85);
   color: #000;
-  transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar.scrolled .navLink {
   color: #000;
 }
+
 
 h2 {
   color: #ffeb3b;
