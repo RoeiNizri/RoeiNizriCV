@@ -15,7 +15,7 @@ html, body {
   animation: fadeInUp 1s forwards;
   position: relative; /* Ensure z-index is effective */
   z-index: 2; /* Ensure this is above any background elements */
-  color: #ffffff; /* Ensure text color is white for contrast */
+
 }
 
 .container {

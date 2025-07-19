@@ -26,8 +26,6 @@
   ],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
   "description": "Explore Roei Nizri's showcasing innovative projects, diverse skills, and extensive experiences in software engineering, web development, AI, and more. Discover the expertise and creativity behind Roei's work.",
   "orientation": "portrait-primary",
   "lang": "en-US",
