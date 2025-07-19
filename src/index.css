@@ -1,18 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,13 +90,23 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 body {
-  line-height: 1.6; /* Adjusted line-height for better readability */
+  line-height: 1.6;
+  /* Adjusted line-height for better readability */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -39,16 +117,20 @@ body {
   color: #333;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -79,7 +161,8 @@ img {
   height: auto;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: inherit;
 }
 
@@ -102,21 +185,38 @@ input, textarea {
 
 /* Footer styles */
 footer {
-  background: conic-gradient(135deg, #000000 -20%, #ffeb3b 100%);
-  text-align: center;
-  padding: 20px;
-  position: relative; /* Changed from fixed to relative */
+  position: relative;
   width: 100%;
-  z-index: 1; /* Ensure the footer is on top */
+  padding: 20px 1rem;
+  backdrop-filter: blur(12px);
+  /* Glass blur effect */
+  -webkit-backdrop-filter: blur(12px);
+  text-align: center;
+  color: #fefefe;
+  /* Light text */
+  font-weight: 500;
+  transition: background 0.4s ease;
 }
 
-footer p, footer a {
-  color: rgba(255, 255, 255, 1); /* Make the text fully white */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow for contrast */
+footer p,
+footer a {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   margin: 0 10px;
   text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
+  color: #ffeb3b;
+  /* Bright yellow on hover */
   text-decoration: underline;
+}
+
+@keyframes fadeUpFooter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

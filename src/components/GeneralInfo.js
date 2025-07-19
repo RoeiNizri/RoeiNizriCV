@@ -14,8 +14,8 @@ function GeneralInfo() {
         <h2>Education</h2>
         <div className={styles.section}>
           <h3>Ort Braude – Braude Academic College of Engineering</h3>
-          <p>2020-2025: BSc in Software Engineering – Graduated in March 2025.
-          <span className={styles.italic}>My journey here has been a mix of rigorous learning and hands-on projects that have honed my skills and passion for technology.</span></p>
+          <p>2020-2025: BSc in Software Engineering
+            <span className={styles.italic}>My journey here has been a mix of rigorous learning and hands-on projects that have honed my skills and passion for technology.</span></p>
           <div className={styles.resumeSection}>
             <img src={bachelorImage} alt="Bachelor&apos;s Degree" className={styles.bachelorImage} />
           </div>

@@ -16,9 +16,14 @@ function Skills() {
           <li>
             <strong>Programming Languages:</strong> I speak the languages of the digital world fluently – <strong>C, C#, Java, JavaScript, SQL, Python,</strong> and even <strong>Assembly</strong>. Each project is a new adventure in these languages!
           </li>
-          <li>
-            <strong>Web Development:</strong> Crafting beautiful, responsive websites with <strong>HTML, CSS</strong>, and <strong>React</strong>. I bring server-side magic with <strong>Node.js</strong> to create seamless user experiences.
-          </li>
+<li>
+  <strong>Web Development:</strong> Building modern, responsive web applications using <strong>HTML, CSS, Tailwind CSS, JavaScript, TypeScript</strong>, and top frontend frameworks like
+  <strong> React, Vue.js, Angular, Next.js</strong>. On the backend, I develop scalable systems with <strong>Node.js, Express.js, NestJS</strong>, and real-time apps using <strong>Meteor</strong>. I create efficient APIs with
+  <strong> REST</strong> and <strong>GraphQL</strong>, work with <strong>MongoDB, PostgreSQL, MySQL</strong>, and integrate real-time features via <strong>WebSockets</strong> and <strong>Socket.io</strong>. I also implement secure authentication
+   (<strong>JWT, OAuth</strong>), write automated tests with <strong>Jest</strong> and <strong>Mocha</strong>, and deploy using <strong>Docker, CI/CD</strong>, and cloud platforms like <strong>Vercel, Netlify</strong>, and <strong>AWS</strong>. Additionally, I develop and integrate 
+  <strong> WebSDKs</strong> for seamless client-side integration of backend services and third-party APIs.
+</li>
+
           <li>
             <strong>Database Management:</strong> Whether it’s <strong>MongoDB</strong> or <strong>SQL</strong>, I know how to store, manage, and retrieve data efficiently to power robust applications.
           </li>
