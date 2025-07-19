@@ -264,11 +264,12 @@ body {
 
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .header {
     min-height: auto;
     margin-top: -140px;
     padding: 200px 20px 400px 20px;
+    margin-bottom: -140px;
   }
 
   .header .title {
