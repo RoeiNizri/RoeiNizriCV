@@ -121,7 +121,8 @@ p {
     font-size: 1rem;
   }
   .general {
-    margin-top: 45px; /* Adjust this value as needed to move the section down */
+    margin-top: -140px;
+      padding: 200px 20px;
   }
 }
 

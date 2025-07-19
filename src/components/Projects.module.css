@@ -73,6 +73,7 @@ html, body {
 }
 @media (max-width: 600px) {
   .projects {
-    margin-top: 45px;
+   margin-top: -140px;
+      padding: 200px 20px;
   }
 }

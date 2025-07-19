@@ -12,10 +12,10 @@ section {
   padding: 3rem 1.5rem;
   padding-top: 100px;
   background: linear-gradient(135deg, #1a1a1a, #333);
-    border-radius: 12px;
-    margin: 5rem auto;
-    max-width: 1000px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin: 5rem auto;
+  max-width: 1000px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -26,7 +26,7 @@ section {
   background: rgba(255, 235, 59, 0.1);
   backdrop-filter: blur(12px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,10 +36,10 @@ section {
 .navbar.scrolled {
   background-color: #ffeb3b;
   /* Change background color on scroll */
-    color: #000;
-    /* Change text color on scroll */
-    transform: translateY(-10px);
-    /* Slight lift on scroll */
+  color: #000;
+  /* Change text color on scroll */
+  transform: translateY(-10px);
+  /* Slight lift on scroll */
 }
 
 .navbar.scrolled .navLink {
@@ -66,11 +66,11 @@ section {
 
 .logoImage {
   border-radius: 10%;
-    /* Rounded edges for the logo */
-    height: 90px;
-    /* Adjust the height to fit within the navbar */
-    width: 90px;
-    /* Ensure the logo is square for circular rounding */
+  /* Rounded edges for the logo */
+  height: 90px;
+  /* Adjust the height to fit within the navbar */
+  width: 90px;
+  /* Ensure the logo is square for circular rounding */
   margin-top: 0.3cm;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -169,8 +169,8 @@ h2::after {
 
 @media (max-width: 768px) {
   body {
-    padding-top: 120px;
-    }
+    padding-top: 140px;
+  }
 
   .navbar {
     height: auto;
@@ -180,23 +180,23 @@ h2::after {
   .navbarContainer {
     flex-direction: column;
     /* Stack items vertically on mobile */
-      align-items: center;
-      /* Center align items */
-      margin-bottom: 1rem;
-      /* Add more space below the nav link */
+    align-items: center;
+    /* Center align items */
+    margin-bottom: 1rem;
+    /* Add more space below the nav link */
   }
 
   .navList {
     flex-direction: row;
     /* Ensure nav items remain in a row */
-      width: 100%;
-      /* Make nav items take full width */
-      align-items: center;
-      /* Center align nav items */
-      flex-wrap: wrap;
-      /* Allow wrapping of items */
-      justify-content: center;
-      /* Center items */
+    width: 100%;
+    /* Make nav items take full width */
+    align-items: center;
+    /* Center align nav items */
+    flex-wrap: wrap;
+    /* Allow wrapping of items */
+    justify-content: center;
+    /* Center items */
   }
 
   .navItem {
@@ -207,7 +207,7 @@ h2::after {
   .navLink {
     width: auto;
     /* Allow nav links to adjust width */
-      text-align: center;
-      /* Center align text */
+    text-align: center;
+    /* Center align text */
   }
 }

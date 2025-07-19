@@ -158,7 +158,8 @@
     padding: 1rem; /* Add padding for small screens */
   }
   .contact {
-    margin-top: 45px; /* Add margin-top specifically for mobile */
+    margin-top: -140px;
+      padding: 200px 20px;
   }
   .contact .contactInfo p, .contact .contactInfo a {
     display: block; /* Ensure they stack vertically */
