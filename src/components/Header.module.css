@@ -138,7 +138,7 @@ body {
   /* Make the box smaller by reducing the width */
   max-width: 600px;
   /* Ensure it doesn't get too large on wider screens */
-  background: linear-gradient(0deg, #000000 0%, #ffeb3b 111%);
+  background-color: #1e1e2f;
   color: #ffeb3b;
   overflow: hidden;
   border-radius: 15px;
@@ -148,6 +148,54 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 2rem auto;
   /* Center the box and add space from the top */
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e6e6e6;
+}
+
+.highlighted {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.logoc {
+  height: 1em;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.detailsSection {
+  margin-top: 1rem;
+  background-color: #1e1e2f;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+}
+
+.summaryTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffd700;
+  margin-bottom: 0.75rem;
+}
+
+.projectList {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  list-style-type: disc;
+  color: #f0f0f0;
+}
+
+.projectList li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 
 @keyframes pulse {
