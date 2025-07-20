@@ -8,6 +8,7 @@ import bachelorImage from '../BachelorDegree.jpg';
  */
 function GeneralInfo() {
   return (
+    
     <section className={styles.general}>
       <div className={styles.container}>
         {/* Education Section */}

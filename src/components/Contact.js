@@ -1,18 +1,24 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import styles from './Contact.module.css';
 import profilePicture from '../RoeiNizriImg.jpg'; // Adjust the path as needed
 import downloadIcon from '../logo512.png'; // Import the new image
 import RoeiNizriResume from '../Roei-Nizri-CV.pdf';
+import styles from './Contact.module.css';
 
 
 // const googleDriveLink = "https://drive.google.com/file/d/1SvNdWAabkUPODBYNBJIHJb0KOmNmCKsy/view";
 
-function Contact() {
+function Contact() { 
   return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
     <section className={styles.contact}>
       <div className={styles.container}>
         <h2>Let&apos;s Get in Touch</h2>
@@ -56,6 +62,8 @@ function Contact() {
         </div>
       </div>
     </section>
+    </motion.div>
+
   );
 }
 

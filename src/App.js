@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
@@ -8,14 +8,26 @@ import SkillsPage from './pages/SkillsPage';
 import GeneralInfoPage from './pages/GeneralInfoPage';
 import Navbar from './components/Navbar';
 import Popup from './components/Popup';
+import { useLoading, LoadingProvider } from './pages/LoadingContext';
+import BitcoinLoader from './components/BitcoinLoader';
 
 function App() {
   const location = useLocation();
+  const { loading, setLoading } = useLoading();
+
+  useEffect(() => {
+    setLoading(true);
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 800);
+    return () => clearTimeout(timeout);
+  }, [location.pathname, setLoading]);
 
   return (
     <div className="App">
       <Navbar />
-      <AnimatePresence>
+      {loading && <BitcoinLoader />}
+      <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<ContactPage />} />
@@ -32,7 +44,9 @@ function App() {
 export default function AppWithRouter() {
   return (
     <Router>
-      <App />
+      <LoadingProvider>
+        <App />
+      </LoadingProvider>
     </Router>
   );
 }
