@@ -8,7 +8,7 @@ import SkillsPage from './pages/SkillsPage';
 import GeneralInfoPage from './pages/GeneralInfoPage';
 import Navbar from './components/Navbar';
 import Popup from './components/Popup';
-import { useLoading, LoadingProvider } from './pages/LoadingContext';
+import { useLoading, LoadingProvider } from './pages/LoadingProvider';
 import BitcoinLoader from './components/BitcoinLoader';
 
 function App() {
