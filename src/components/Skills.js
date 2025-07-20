@@ -18,13 +18,13 @@ function Skills() {
           </li>
           <li>
             <strong>Web Development:</strong>
-            <details open>
+            <details>
               <summary><strong>Frontend:</strong> Tools & frameworks for building beautiful, responsive UIs</summary>
               <p>
                 Building modern, responsive UIs using <strong>HTML, CSS, Tailwind CSS, JavaScript, TypeScript</strong> and leading frameworks like <strong>React, Vue.js, Angular,</strong> and <strong>Next.js</strong>.
               </p>
             </details>
-            <details open>
+            <details>
               <summary><strong>Backend:</strong> Scalable servers, APIs, databases, and authentication</summary>
               <p>
                 Developing scalable backends using <strong>Node.js, Express.js, NestJS</strong>, and real-time apps with <strong>Meteor</strong>. I build efficient APIs with <strong>REST</strong> and <strong>GraphQL</strong>, handle data with <strong>MongoDB, PostgreSQL,</strong> and <strong>MySQL</strong>, and enable real-time communication via <strong>WebSockets</strong> and <strong>Socket.io</strong>. I implement secure auth (<strong>JWT, OAuth</strong>), write tests using <strong>Jest</strong> and <strong>Mocha</strong>, and deploy via <strong>Docker, CI/CD</strong>, and cloud platforms like <strong>Vercel, Netlify</strong>, and <strong>AWS</strong>. I also build <strong>WebSDKs</strong> to integrate backend services with client apps.

@@ -50,39 +50,39 @@ function Header() {
             What I&apos;ve Built at PlasBit 💼
           </summary>
           <ul className={styles.projectList}>
-            <li>
+            <p>
               <strong>Sumsub API Integration</strong> – Implemented advanced KYC/AML verification flows using Sumsub SDK and REST API, including applicant creation, review cycles, IP/country-based risk scoring, and re-verification logic.
-            </li>
-            <li>
-             <strong>Travel Rule Compliance</strong> – Built and integrated a fully compliant Travel Rule flow (per FATF guidelines), including transaction initiation, beneficiary verification, transaction status updates, and wallet ownership confirmation using Sumsub&apos;s Travel Rule endpoints.
-            </li>
-            <li>
+            </p>
+            <p>
+              <strong>Travel Rule Compliance</strong> – Built and integrated a fully compliant Travel Rule flow (per FATF guidelines), including transaction initiation, beneficiary verification, transaction status updates, and wallet ownership confirmation using Sumsub&apos;s Travel Rule endpoints.
+            </p>
+            <p>
               <strong>Risk Assessment System</strong> – Developed a modular risk scoring engine with dynamic configurations based on criteria like country of residence, IP origin, transaction patterns, and adverse media screening — visualized in an intuitive admin panel.
-            </li>
-            <li>
+            </p>
+            <p>
               <strong>Transak API Integration</strong> – Integrated Transak&apos;s fiat-to-crypto on-ramp service, enabling seamless purchases directly from the platform with localized KYC and transaction tracking.
-            </li>
-            <li>
+            </p>
+            <p>
               <strong>Admin Panel Configuration Tools</strong> – Engineered flexible, React-based configuration interfaces for managing KYC levels, provider flows, verification thresholds, and transaction rules — all backed by secure Meteor methods.
-            </li>
-            <li>
+            </p>
+            <p>
               <strong>Crypto Transaction Monitoring</strong> – Built real-time transaction dashboards with filtering, sorting, and export capabilities, supporting BTC, ETH, XMR, and altcoins with full explorer integration and risk tagging.
-            </li>
-            <li>
+            </p>
+            <p>
               <strong>Dispute & Enhanced Due Diligence Flows</strong> – Designed and implemented multi-step card dispute forms and enhanced verification interfaces, fully integrated with backend workflows and styled to match compliance standards.
-            </li>
-            <li>
+            </p>
+            <p>
               <strong>Automated Review Cycles</strong> – Scheduled and triggered automatic KYC re-verifications based on user risk levels and expiration timelines, using Sumsub&apos;s <code>resetApplicant</code> and dynamic questionnaire flow switching.
-            </li>
-            <li>
-             <strong>WebSDKs and Public Configs</strong> – Developed reusable frontend SDK components and dynamic configuration management logic (e.g., public KYC flow IDs, enums, labels) for seamless deployment and maintainability.
-            </li>
-            <li>
+            </p>
+            <p>
+              <strong>WebSDKs and Public Configs</strong> – Developed reusable frontend SDK components and dynamic configuration management logic (e.g., public KYC flow IDs, enums, labels) for seamless deployment and maintainability.
+            </p>
+            <p>
               <strong>2FA-Enabled Admin Actions</strong> – Secured sensitive admin-side updates (e.g., email changes, KYC overrides) with modal-based two-factor authentication and role-based access controls.
-            </li>
-            <li>
+            </p>
+            <p>
               <strong>i18n + UI/UX Enhancements</strong> – Refactored multiple components to support localization, responsive layouts, dynamic risk visuals, and rich FAQ/help modals with styled markdown and JSX formatting.
-            </li>
+            </p>
           </ul>
         </details>
 
