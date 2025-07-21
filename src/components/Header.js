@@ -36,6 +36,7 @@ function Header() {
           Beyond coding, I bring a wealth of experience from customer service and management roles. I know how to <span className={styles.highlighted}>lead teams</span>,
           keep projects on track, and deliver <span className={styles.highlighted}>results under pressure</span>. When I&apos;m not coding, you might find me
           brainstorming the next big idea or enjoying some quality downtime. By the way, when I&apos;m not buried in code, I&apos;m either hitting the gym, getting lost in a good book, playing the piano, or just enjoying life&apos;s simple pleasures.
+          Oh—and did I mention I&apos;m a certified dog lover? In my spare time, I volunteer at <a href="https://www.klavlove.co.il/" target="_blank" rel="noopener noreferrer">KlavLove</a>, a dog rescue organization. If it has a wagging tail and puppy eyes, I&apos;m probably already emotionally invested.
         </p>
 
         <p className={styles.description}>
