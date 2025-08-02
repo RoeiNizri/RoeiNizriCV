@@ -5,12 +5,10 @@ body {
   height: 100%;
   width: 100%;
   overflow-y: auto;
-  /* Ensure vertical scroll is enabled */
 }
 
 * {
   box-sizing: border-box;
-  /* Ensure consistent sizing */
 }
 
 .header {
@@ -22,21 +20,16 @@ body {
   text-align: center;
   padding: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: -140px;
-  padding: 200px 20px 400px 20px;
+  margin-top: -200px;
+    padding: 300px 20px 0px 20px;
 }
 
 .header-container {
   position: relative;
   z-index: 2;
   max-width: 80%;
-  /* Ensure it takes full width */
   margin: 0 auto;
   padding-top: 2rem;
-  padding-left: 1rem;
-  /* Added padding to improve readability */
-  padding-right: 1rem;
-  /* Added padding to improve readability */
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -124,7 +117,6 @@ body {
 .logo:hover {
   transform: scale(1.05);
 }
-
 .logoc {
   height: 40px;
   width: auto;
@@ -164,38 +156,12 @@ body {
   margin-left: 4px;
 }
 
-.logoc {
-  height: 1em;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-
 .detailsSection {
   margin-top: 1rem;
   background-color: #1e1e2f;
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
-}
-
-.summaryTitle {
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  color: #ffd700;
-  margin-bottom: 0.75rem;
-}
-
-.projectList {
-  padding-left: 1.5rem;
-  margin-top: 1rem;
-  list-style-type: disc;
-  color: #f0f0f0;
-}
-
-.projectList li {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
 }
 
 @keyframes pulse {
@@ -315,11 +281,13 @@ body {
 @media (max-width: 768px) {
   .header {
     min-height: auto;
-    margin-top: -140px;
-    padding: 200px 20px 400px 20px;
-    margin-bottom: -140px;
+    margin-top: -100px;
+      padding: 300px 20px 0px 20px;
   }
 
+        .headerBox {
+          width: 100%;
+        }
   .header .title {
     font-size: 2.5rem;
     margin-bottom: 0.75rem;

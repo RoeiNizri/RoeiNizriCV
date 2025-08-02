@@ -108,6 +108,77 @@ p {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(255, 235, 59, 0.6);
 }
+.logoc {
+  height: 40px;
+  width: auto;
+  margin: 2px;
+  vertical-align: middle;
+}
+
+.headerBox {
+  position: relative;
+  width: 80%;
+  /* Make the box smaller by reducing the width */
+  max-width: 600px;
+  /* Ensure it doesn't get too large on wider screens */
+  background-color: #1e1e2f;
+  color: #ffeb3b;
+  overflow: hidden;
+  border-radius: 15px;
+  text-align: center;
+  padding: 1.5rem;
+  /* Slightly reduce padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+  /* Center the box and add space from the top */
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e6e6e6;
+}
+
+.highlighted {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.logoc {
+  height: 2em;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.detailsSection {
+  margin-top: 1rem;
+  background-color: #1e1e2f;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+}
+
+.summaryTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffd700;
+  margin-bottom: 0.75rem;
+}
+
+.projectList {
+  margin-top: 1rem;
+  list-style-type: disc;
+  color: #f0f0f0;
+}
+
+.projectList li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
 @media (max-width: 768px) {
   h2 {
     font-size: 1.8rem;
@@ -125,6 +196,24 @@ p {
     padding: 200px 20px 400px 20px;
     margin-bottom: -140px;
   }
+.detailsSection {
+  padding: 0.75rem;
+}
+
+.summaryTitle {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.projectList {
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.projectList li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
 }
 
 @keyframes fadeInUp {
