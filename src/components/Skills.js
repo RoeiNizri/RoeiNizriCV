@@ -38,7 +38,7 @@ function Skills() {
             <strong>Database Management:</strong> Whether it’s <strong>MongoDB</strong> or <strong>SQL</strong>, I know how to store, manage, and retrieve data efficiently to power robust applications.
           </li>
           <li>
-            <strong>Programming Languages:</strong> I speak the languages of the digital world fluently – <strong>C, C#, Java, JavaScript, SQL, Python,</strong> and even <strong>Assembly</strong>. Each project is a new adventure in these languages!
+            <strong>Programming Languages:</strong> I speak the languages of the digital world fluently - <strong>C, C#, Java, JavaScript, SQL, Python,</strong> and even <strong>Assembly</strong>. Each project is a new adventure in these languages!
           </li>
           <li>
             <strong>Software Development:</strong> Full-stack applications are my playground. With expertise in project management using <strong>Git, Jira</strong> and <strong>Monday</strong>, I ensure each project is a success from start to finish.

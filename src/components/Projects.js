@@ -39,7 +39,7 @@ function Projects() {
         {/* Research Project – Anomaly Detection Using Graph Diffusion Models */}
         <a href={Project} target="_blank" rel="noopener noreferrer">
           <div className={styles.project}>
-            <h3>Research – Anomaly Detection Using Graph Diffusion Models</h3>
+            <h3>Research - Anomaly Detection Using Graph Diffusion Models</h3>
             <p>
               This research explores anomaly detection in citation graphs using a combination of Graph Autoencoders (GAE) and
               Denoising Diffusion Probabilistic Models (DDPM). It introduces a novel approach for generating synthetic anomaly nodes

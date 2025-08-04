@@ -1,8 +1,8 @@
-import React from 'react'; // Import React library
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon component
 import { faBitcoin } from '@fortawesome/free-brands-svg-icons'; // Import Bitcoin icon from FontAwesome
 import styles from './Header.module.css'; // Import CSS module for styling
-
 
 /**
  * Header Component
@@ -27,27 +27,27 @@ function Header() {
 
         <p className={styles.description}>
           I&apos;m a tech enthusiast with a knack for multiple programming languages and technologies. My areas of interest
-          span across <span className={styles.highlighted}>medical solutions</span>, <span className={styles.highlighted}>financial solutions</span>, <span className={styles.highlighted}>artificial intelligence</span>, and <span className={styles.highlighted}>blockchain</span> – yes, I&apos;m a bit of
+          span across <span className={styles.highlighted}>medical solutions</span>, <span className={styles.highlighted}>financial solutions</span>, <span className={styles.highlighted}>artificial intelligence</span>, and <span className={styles.highlighted}>blockchain</span>, yes I&apos;m a bit of
           a blockchain expert too! Whether it&apos;s building a life-saving app, optimizing financial transactions, creating
-          smart AI systems, or exploring the future of decentralized tech, I&apos;m your go-to developer.
+          smart AI systems, or exploring the future of decentralized tech, I&apos;m your go to developer.
         </p>
 
         <p className={styles.description}>
           Beyond coding, I bring a wealth of experience from customer service and management roles. I know how to <span className={styles.highlighted}>lead teams</span>,
           keep projects on track, and deliver <span className={styles.highlighted}>results under pressure</span>. When I&apos;m not coding, you might find me
           brainstorming the next big idea or enjoying some quality downtime. By the way, when I&apos;m not buried in code, I&apos;m either hitting the gym, getting lost in a good book, playing the piano, or just enjoying life&apos;s simple pleasures.
-          Oh—and did I mention I&apos;m a certified dog lover? In my spare time, I volunteer at <a href="https://www.klavlove.co.il/" target="_blank" rel="noopener noreferrer">KlavLove</a>, a dog rescue organization. If it has a wagging tail and puppy eyes, I&apos;m probably already emotionally invested.
+          Did I mention I&apos;m a certified dog lover? In my spare time, I volunteer at <a href="https://www.klavlove.co.il/" target="_blank" rel="noopener noreferrer">KlavLove</a>, a dog rescue organization. If it has a wagging tail and puppy eyes, I&apos;m probably already emotionally invested.
         </p>
 
         <div className={styles.headerBox}>
           <div className={styles.headerContainer}>
             <h1 className={styles.title}>Ready to know more?</h1>
             <p className={styles.subtitle}>There are more surprises than finding Satoshi Nakamoto!</p>
-            <a href="https://bts.dr-brokers.com/" target="_blank" rel="noopener noreferrer" className={styles.link}>
+            <Link to='./Projects' className={styles.link}>
               <span className={styles.highlight}>
                 Discover Now <FontAwesomeIcon icon={faBitcoin} className={styles.icon} />
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

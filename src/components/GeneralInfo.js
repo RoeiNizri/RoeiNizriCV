@@ -1,6 +1,7 @@
 import styles from './GeneralInfo.module.css'; // Import CSS module for styling
 import bachelorImage from '../BachelorDegree.jpg';
 import plasbitLogo from '../Plasbit.webp';
+import rrWebLogo from '../rr-web.png';
 /**
  * GeneralInfo Component
  * This component renders general information including education, courses,
@@ -12,27 +13,13 @@ function GeneralInfo() {
     
     <section className={styles.general}>
       <div className={styles.container}>
-        {/* Education Section */}
-        <h2>Education</h2>
-        <div className={styles.section}>
-          <h3>Ort Braude – Braude Academic College of Engineering</h3>
-          <p>2020-2025: BSc in Software Engineering
-            <span className={styles.italic}>My journey here has been a mix of rigorous learning and hands-on projects that have honed my skills and passion for technology.</span></p>
-          <div className={styles.resumeSection}>
-            <img src={bachelorImage} alt="Bachelor&apos;s Degree" className={styles.bachelorImage} />
-          </div>
-          <h3>High School Education - Ort Motzkin High School</h3>
-          <p>2013-2015: <span className={styles.italic}>Achieved full matriculation in Computer Science and Physics. I completed 10 study units in Computer Science and 5 study units in Physics, which laid a solid foundation for my engineering studies.</span></p>
-          <p><span className={styles.italic}>During high school, I provided assistance to struggling students and achieved notable leadership milestones.</span></p>
-        </div>
-
-                {/* Work Experience Section */}
+        {/* Work Experience Section */}
         <h2>Work Experience</h2>
         <div className={styles.section}>
-          <h3>PlasBit – Full Stack and Blockchain Developer</h3>
+          <h3>PlasBit - Full Stack and Blockchain Developer <img src={plasbitLogo} alt="PlasBit Logo" className={styles.logoc} /></h3>
           <p>2025</p>
           <p className={styles.italic}>
-          My time at PlasBit <img src={plasbitLogo} alt="PlasBit Logo" className={styles.logoc} /> was both professionally fulfilling and personally meaningful.
+          My time at PlasBit was both professionally fulfilling and personally meaningful.
           I believed in what we were building, and I gave it my all.
           However, I found myself at a difficult turning point when it became clear that certain practices at the ownership level did not align with legal or ethical expectations.
           Staying true to my ethical principles, I made the hard but necessary decision to move on and continue my journey with integrity at the forefront.
@@ -44,40 +31,64 @@ function GeneralInfo() {
           </summary>
           <ul className={styles.projectList}>
             <p>
-              <strong>Sumsub API Integration</strong> – Implemented advanced KYC/AML verification flows using Sumsub SDK and REST API, including applicant creation, review cycles, IP/country-based risk scoring, and re-verification logic.
+              <strong>Sumsub API Integration</strong> - Implemented advanced KYC/AML verification flows using Sumsub SDK and REST API, including applicant creation, review cycles, IP/country-based risk scoring, and re-verification logic.
             </p>
             <p>
-              <strong>Travel Rule Compliance</strong> – Built and integrated a fully compliant Travel Rule flow (per FATF guidelines), including transaction initiation, beneficiary verification, transaction status updates, and wallet ownership confirmation using Sumsub&apos;s Travel Rule endpoints.
+              <strong>Travel Rule Compliance</strong> - Built and integrated a fully compliant Travel Rule flow (per FATF guidelines), including transaction initiation, beneficiary verification, transaction status updates, and wallet ownership confirmation using Sumsub&apos;s Travel Rule endpoints.
             </p>
             <p>
-              <strong>Risk Assessment System</strong> – Developed a modular risk scoring engine with dynamic configurations based on criteria like country of residence, IP origin, transaction patterns, and adverse media screening — visualized in an intuitive admin panel.
+              <strong>Risk Assessment System</strong> - Developed a modular risk scoring engine with dynamic configurations based on criteria like country of residence, IP origin, transaction patterns, and adverse media screening visualized in an intuitive admin panel.
             </p>
             <p>
-              <strong>Transak API Integration</strong> – Integrated Transak&apos;s fiat-to-crypto on-ramp service, enabling seamless purchases directly from the platform with localized KYC and transaction tracking.
+              <strong>Transak API Integration</strong> - Integrated Transak&apos;s fiat-to-crypto on-ramp service, enabling seamless purchases directly from the platform with localized KYC and transaction tracking.
             </p>
             <p>
-              <strong>Admin Panel Configuration Tools</strong> – Engineered flexible, React-based configuration interfaces for managing KYC levels, provider flows, verification thresholds, and transaction rules — all backed by secure Meteor methods.
+              <strong>Admin Panel Configuration Tools</strong> - Engineered flexible, React-based configuration interfaces for managing KYC levels, provider flows, verification thresholds, and transaction rules all backed by secure Meteor methods.
             </p>
             <p>
-              <strong>Crypto Transaction Monitoring</strong> – Built real-time transaction dashboards with filtering, sorting, and export capabilities, supporting BTC, ETH, XMR, and altcoins with full explorer integration and risk tagging.
+              <strong>Crypto Transaction Monitoring</strong> - Built real-time transaction dashboards with filtering, sorting, and export capabilities, supporting BTC, ETH, XMR, and altcoins with full explorer integration and risk tagging.
             </p>
             <p>
-              <strong>Dispute & Enhanced Due Diligence Flows</strong> – Designed and implemented multi-step card dispute forms and enhanced verification interfaces, fully integrated with backend workflows and styled to match compliance standards.
+              <strong>Dispute & Enhanced Due Diligence Flows</strong> - Designed and implemented multi-step card dispute forms and enhanced verification interfaces, fully integrated with backend workflows and styled to match compliance standards.
             </p>
             <p>
-              <strong>Automated Review Cycles</strong> – Scheduled and triggered automatic KYC re-verifications based on user risk levels and expiration timelines, using Sumsub&apos;s <code>resetApplicant</code> and dynamic questionnaire flow switching.
+              <strong>Automated Review Cycles</strong> - Scheduled and triggered automatic KYC re-verifications based on user risk levels and expiration timelines, using Sumsub&apos;s <code>resetApplicant</code> and dynamic questionnaire flow switching.
             </p>
             <p>
-              <strong>WebSDKs and Public Configs</strong> – Developed reusable frontend SDK components and dynamic configuration management logic (e.g., public KYC flow IDs, enums, labels) for seamless deployment and maintainability.
+              <strong>WebSDKs and Public Configs</strong> - Developed reusable frontend SDK components and dynamic configuration management logic (e.g., public KYC flow IDs, enums, labels) for seamless deployment and maintainability.
             </p>
             <p>
-              <strong>2FA-Enabled Admin Actions</strong> – Secured sensitive admin-side updates (e.g., email changes, KYC overrides) with modal-based two-factor authentication and role-based access controls.
+              <strong>2FA-Enabled Admin Actions</strong> - Secured sensitive admin-side updates (e.g., email changes, KYC overrides) with modal-based two-factor authentication and role-based access controls.
             </p>
             <p>
-              <strong>i18n + UI/UX Enhancements</strong> – Refactored multiple components to support localization, responsive layouts, dynamic risk visuals, and rich FAQ/help modals with styled markdown and JSX formatting.
+              <strong>i18n + UI/UX Enhancements</strong> - Refactored multiple components to support localization, responsive layouts, dynamic risk visuals, and rich FAQ/help modals with styled markdown and JSX formatting.
             </p>
           </ul>
         </details>
+
+          <h3>R & R - Net, Freelance Web Developer <img src={rrWebLogo} alt="R&R Web Logo" className={styles.logoc} /></h3>
+          <p>2023 - 2024</p>
+          <p className={styles.italic}>
+            Provided end-to-end web solutions from concept and design to deployment and optimization for small businesses seeking clean, fast, and SEO-friendly websites. Each project reflected unique client goals and leveraged modern web technologies.
+          </p>
+
+          <ul className={styles.projectList}>
+            <li>
+              <strong>QRScanner</strong> - Quick and accurate QR scanning from screenshots. <span className={styles.tech}>Microservices, jsQR</span>
+            </li>
+            <li>
+              <strong>BTS: Blockchain Trading System</strong> - A demo crypto trading platform. <span className={styles.tech}>IndexedDB, HTML, CSS</span>
+            </li>
+            <li>
+              <strong>Dahan Hair Stylist</strong> - Personal branding and appointment site. <span className={styles.tech}>Netlify</span>
+            </li>
+            <li>
+              <strong>Dr-Shada</strong> - Medical clinic site with secure contact flow.
+            </li>
+            <li>
+              <strong>What&apos;s New</strong> - CMS-ready marketing site for epilator brand.
+            </li>
+          </ul>
 
           <h3>Ten Gas Station</h3>
           <p>2019 - 2020</p>
@@ -96,6 +107,20 @@ function GeneralInfo() {
           <p><span className={styles.italic}>Handled logistics and supply chain management, ensuring timely delivery of products. This role enhanced my problem-solving skills and ability to work under pressure.</span></p>
         </div>
 
+      {/* Education Section */}
+      <h2>Education</h2>
+      <div className={styles.section}>
+        <h3>Ort Braude - Braude Academic College of Engineering</h3>
+        <p>2020-2025: BSc in Software Engineering
+          <span className={styles.italic}>My journey here has been a mix of rigorous learning and hands-on projects that have honed my skills and passion for technology.</span></p>
+        <div className={styles.resumeSection}>
+          <img src={bachelorImage} alt="Bachelor&apos;s Degree" className={styles.bachelorImage} />
+        </div>
+        <h3>High School Education - Ort Motzkin High School</h3>
+        <p>2013-2015: <span className={styles.italic}>Achieved full matriculation in Computer Science and Physics. I completed 10 study units in Computer Science and 5 study units in Physics, which laid a solid foundation for my engineering studies.</span></p>
+        <p><span className={styles.italic}>During high school, I provided assistance to struggling students and achieved notable leadership milestones.</span></p>
+      </div>
+
         {/* Courses Section */}
         <h2>Courses</h2>
         <div className={styles.section}>
@@ -104,7 +129,7 @@ function GeneralInfo() {
           <p><span className={styles.italic}>This course gave me a solid understanding of the capital markets, enhancing my analytical skills and financial acumen.</span></p>
           <h3>Barista Course</h3>
           <p>Biga | 2017</p>
-          <p><span className={styles.italic}>I learned the art of coffee making, which taught me patience, precision, and the importance of delivering quality – skills I carry into my tech projects.</span></p>
+          <p><span className={styles.italic}>I learned the art of coffee making, which taught me patience, precision, and the importance of delivering quality - skills I carry into my tech projects.</span></p>
         </div>
 
         {/* Military Service Section */}

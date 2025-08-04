@@ -7,7 +7,7 @@ html, body {
 }
 
 .general {
-  background: linear-gradient(135deg, #000000 -20%, #ffeb3b 100%);
+  background: linear-gradient(145deg, #333 5%, #f0b90b 100%);
   padding: 60px 20px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -66,7 +66,7 @@ h2::after {
 h3 {
   font-size: 1.8rem;
   color: #ffeb3b;
-  margin-bottom: 0.5em;
+  margin: 0.5em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -179,6 +179,14 @@ p {
   margin-bottom: 0.75rem;
   line-height: 1.6;
 }
+
+.tech {
+  font-style: italic;
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
 @media (max-width: 768px) {
   h2 {
     font-size: 1.8rem;
