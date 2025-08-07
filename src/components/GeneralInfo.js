@@ -2,6 +2,7 @@ import styles from './GeneralInfo.module.css'; // Import CSS module for styling
 import bachelorImage from '../BachelorDegree.jpg';
 import plasbitLogo from '../Plasbit.webp';
 import rrWebLogo from '../rr-web.png';
+import RoeiNizriCoverLetter from '../Roei-Nizri-Cover-Letter.pdf';
 /**
  * GeneralInfo Component
  * This component renders general information including education, courses,
@@ -10,7 +11,7 @@ import rrWebLogo from '../rr-web.png';
  */
 function GeneralInfo() {
   return (
-    
+
     <section className={styles.general}>
       <div className={styles.container}>
         {/* Work Experience Section */}
@@ -19,52 +20,55 @@ function GeneralInfo() {
           <h3>PlasBit - Full Stack and Blockchain Developer <img src={plasbitLogo} alt="PlasBit Logo" className={styles.logoc} /></h3>
           <p>2025</p>
           <p className={styles.italic}>
-          My time at PlasBit was both professionally fulfilling and personally meaningful.
-          I believed in what we were building, and I gave it my all.
-          However, I found myself at a difficult turning point when it became clear that certain practices at the ownership level did not align with legal or ethical expectations.
-          Staying true to my ethical principles, I made the hard but necessary decision to move on and continue my journey with integrity at the forefront.
-        </p>
-        
-        <details className={styles.detailsSection}>
-          <summary className={styles.summaryTitle}>
-            What I&apos;ve Built at PlasBit 💼
-          </summary>
-          <ul className={styles.projectList}>
-            <p>
-              <strong>Sumsub API Integration</strong> - Implemented advanced KYC/AML verification flows using Sumsub SDK and REST API, including applicant creation, review cycles, IP/country-based risk scoring, and re-verification logic.
-            </p>
-            <p>
-              <strong>Travel Rule Compliance</strong> - Built and integrated a fully compliant Travel Rule flow (per FATF guidelines), including transaction initiation, beneficiary verification, transaction status updates, and wallet ownership confirmation using Sumsub&apos;s Travel Rule endpoints.
-            </p>
-            <p>
-              <strong>Risk Assessment System</strong> - Developed a modular risk scoring engine with dynamic configurations based on criteria like country of residence, IP origin, transaction patterns, and adverse media screening visualized in an intuitive admin panel.
-            </p>
-            <p>
-              <strong>Transak API Integration</strong> - Integrated Transak&apos;s fiat-to-crypto on-ramp service, enabling seamless purchases directly from the platform with localized KYC and transaction tracking.
-            </p>
-            <p>
-              <strong>Admin Panel Configuration Tools</strong> - Engineered flexible, React-based configuration interfaces for managing KYC levels, provider flows, verification thresholds, and transaction rules all backed by secure Meteor methods.
-            </p>
-            <p>
-              <strong>Crypto Transaction Monitoring</strong> - Built real-time transaction dashboards with filtering, sorting, and export capabilities, supporting BTC, ETH, XMR, and altcoins with full explorer integration and risk tagging.
-            </p>
-            <p>
-              <strong>Dispute & Enhanced Due Diligence Flows</strong> - Designed and implemented multi-step card dispute forms and enhanced verification interfaces, fully integrated with backend workflows and styled to match compliance standards.
-            </p>
-            <p>
-              <strong>Automated Review Cycles</strong> - Scheduled and triggered automatic KYC re-verifications based on user risk levels and expiration timelines, using Sumsub&apos;s <code>resetApplicant</code> and dynamic questionnaire flow switching.
-            </p>
-            <p>
-              <strong>WebSDKs and Public Configs</strong> - Developed reusable frontend SDK components and dynamic configuration management logic (e.g., public KYC flow IDs, enums, labels) for seamless deployment and maintainability.
-            </p>
-            <p>
-              <strong>2FA-Enabled Admin Actions</strong> - Secured sensitive admin-side updates (e.g., email changes, KYC overrides) with modal-based two-factor authentication and role-based access controls.
-            </p>
-            <p>
-              <strong>i18n + UI/UX Enhancements</strong> - Refactored multiple components to support localization, responsive layouts, dynamic risk visuals, and rich FAQ/help modals with styled markdown and JSX formatting.
-            </p>
-          </ul>
-        </details>
+            My time at PlasBit was both professionally fulfilling and personally meaningful.
+            I believed in what we were building, and I gave it my all.
+            Due to an organizational restructuring within the development department,
+            the company decided to move in a different direction, leading to my departure.
+            I remain proud of my contributions and continue forward with integrity for future opportunities.
+          </p>
+          <a href={RoeiNizriCoverLetter} target="_blank" rel="noopener noreferrer" className={styles.downloadText}>
+            View Cover Letter
+          </a>
+          <details className={styles.detailsSection}>
+            <summary className={styles.summaryTitle}>
+              What I&apos;ve Built at PlasBit 💼
+            </summary>
+            <ul className={styles.projectList}>
+              <p>
+                <strong>Sumsub API Integration</strong> - Implemented advanced KYC/AML verification flows using Sumsub SDK and REST API, including applicant creation, review cycles, IP/country-based risk scoring, and re-verification logic.
+              </p>
+              <p>
+                <strong>Travel Rule Compliance</strong> - Built and integrated a fully compliant Travel Rule flow (per FATF guidelines), including transaction initiation, beneficiary verification, transaction status updates, and wallet ownership confirmation using Sumsub&apos;s Travel Rule endpoints.
+              </p>
+              <p>
+                <strong>Risk Assessment System</strong> - Developed a modular risk scoring engine with dynamic configurations based on criteria like country of residence, IP origin, transaction patterns, and adverse media screening visualized in an intuitive admin panel.
+              </p>
+              <p>
+                <strong>Transak API Integration</strong> - Integrated Transak&apos;s fiat-to-crypto on-ramp service, enabling seamless purchases directly from the platform with localized KYC and transaction tracking.
+              </p>
+              <p>
+                <strong>Admin Panel Configuration Tools</strong> - Engineered flexible, React-based configuration interfaces for managing KYC levels, provider flows, verification thresholds, and transaction rules all backed by secure Meteor methods.
+              </p>
+              <p>
+                <strong>Crypto Transaction Monitoring</strong> - Built real-time transaction dashboards with filtering, sorting, and export capabilities, supporting BTC, ETH, XMR, and altcoins with full explorer integration and risk tagging.
+              </p>
+              <p>
+                <strong>Dispute & Enhanced Due Diligence Flows</strong> - Designed and implemented multi-step card dispute forms and enhanced verification interfaces, fully integrated with backend workflows and styled to match compliance standards.
+              </p>
+              <p>
+                <strong>Automated Review Cycles</strong> - Scheduled and triggered automatic KYC re-verifications based on user risk levels and expiration timelines, using Sumsub&apos;s <code>resetApplicant</code> and dynamic questionnaire flow switching.
+              </p>
+              <p>
+                <strong>WebSDKs and Public Configs</strong> - Developed reusable frontend SDK components and dynamic configuration management logic (e.g., public KYC flow IDs, enums, labels) for seamless deployment and maintainability.
+              </p>
+              <p>
+                <strong>2FA-Enabled Admin Actions</strong> - Secured sensitive admin-side updates (e.g., email changes, KYC overrides) with modal-based two-factor authentication and role-based access controls.
+              </p>
+              <p>
+                <strong>i18n + UI/UX Enhancements</strong> - Refactored multiple components to support localization, responsive layouts, dynamic risk visuals, and rich FAQ/help modals with styled markdown and JSX formatting.
+              </p>
+            </ul>
+          </details>
 
           <h3>R & R - Net, Freelance Web Developer <img src={rrWebLogo} alt="R&R Web Logo" className={styles.logoc} /></h3>
           <p>2023 - 2024</p>
@@ -107,19 +111,19 @@ function GeneralInfo() {
           <p><span className={styles.italic}>Handled logistics and supply chain management, ensuring timely delivery of products. This role enhanced my problem-solving skills and ability to work under pressure.</span></p>
         </div>
 
-      {/* Education Section */}
-      <h2>Education</h2>
-      <div className={styles.section}>
-        <h3>Ort Braude - Braude Academic College of Engineering</h3>
-        <p>2020-2025: BSc in Software Engineering
-          <span className={styles.italic}>My journey here has been a mix of rigorous learning and hands-on projects that have honed my skills and passion for technology.</span></p>
-        <div className={styles.resumeSection}>
-          <img src={bachelorImage} alt="Bachelor&apos;s Degree" className={styles.bachelorImage} />
+        {/* Education Section */}
+        <h2>Education</h2>
+        <div className={styles.section}>
+          <h3>Ort Braude - Braude Academic College of Engineering</h3>
+          <p>2020-2025: BSc in Software Engineering
+            <span className={styles.italic}>My journey here has been a mix of rigorous learning and hands-on projects that have honed my skills and passion for technology.</span></p>
+          <div className={styles.resumeSection}>
+            <img src={bachelorImage} alt="Bachelor&apos;s Degree" className={styles.bachelorImage} />
+          </div>
+          <h3>High School Education - Ort Motzkin High School</h3>
+          <p>2013-2015: <span className={styles.italic}>Achieved full matriculation in Computer Science and Physics. I completed 10 study units in Computer Science and 5 study units in Physics, which laid a solid foundation for my engineering studies.</span></p>
+          <p><span className={styles.italic}>During high school, I provided assistance to struggling students and achieved notable leadership milestones.</span></p>
         </div>
-        <h3>High School Education - Ort Motzkin High School</h3>
-        <p>2013-2015: <span className={styles.italic}>Achieved full matriculation in Computer Science and Physics. I completed 10 study units in Computer Science and 5 study units in Physics, which laid a solid foundation for my engineering studies.</span></p>
-        <p><span className={styles.italic}>During high school, I provided assistance to struggling students and achieved notable leadership milestones.</span></p>
-      </div>
 
         {/* Courses Section */}
         <h2>Courses</h2>

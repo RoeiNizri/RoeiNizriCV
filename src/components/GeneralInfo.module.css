@@ -187,6 +187,12 @@ p {
   margin-left: 0.5rem;
 }
 
+.downloadText {
+  color: #f0b90b;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
 @media (max-width: 768px) {
   h2 {
     font-size: 1.8rem;
