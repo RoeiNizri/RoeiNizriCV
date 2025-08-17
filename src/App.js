@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 import ContactPage from './pages/ContactPage';
@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Popup from './components/Popup';
 import { useLoading, LoadingProvider } from './pages/LoadingProvider';
 import BitcoinLoader from './components/BitcoinLoader';
+import NotFound from "./pages/NotFound";
 
 function App() {
   const location = useLocation();
@@ -34,6 +35,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/general" element={<GeneralInfoPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
       <Popup />
