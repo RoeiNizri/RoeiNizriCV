@@ -43,7 +43,7 @@ function Header() {
           <div className={styles.headerContainer}>
             <h1 className={styles.title}>Ready to know more?</h1>
             <p className={styles.subtitle}>There are more surprises than finding Satoshi Nakamoto!</p>
-            <Link to='./Projects' className={styles.link}>
+            <Link to='./projects' className={styles.link}>
               <span className={styles.highlight}>
                 Discover Now <FontAwesomeIcon icon={faBitcoin} className={styles.icon} />
               </span>
