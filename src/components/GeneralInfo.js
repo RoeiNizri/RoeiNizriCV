@@ -17,6 +17,39 @@ function GeneralInfo() {
         {/* Work Experience Section */}
         <h2>Work Experience</h2>
         <div className={styles.section}>
+          <h3>WhatsNew - Founder & Full Stack Developer <img
+            src="https://whatsnew.co.il/whatsNew192.png"
+            alt="What's New Logo"
+            className={styles.logoc}
+          /></h3>
+          <p>2023 - Present</p>
+
+          <p className={styles.italic}>
+            Founded and developed WhatsNew, a product discovery and deals platform focused on helping users find relevant products and content efficiently.
+            Responsible for full-stack development, product design, and ongoing system improvements.
+          </p>
+
+          <ul className={styles.projectList}>
+            <li>
+              Built the platform end-to-end including frontend, backend, and deployment architecture.
+            </li>
+
+            <li>
+              Developed a CMS-driven system enabling dynamic product pages and content management without redeployments.
+            </li>
+
+            <li>
+              Designed scalable UI architecture with strong focus on performance, SEO, and user experience.
+            </li>
+
+            <li>
+              Integrated external APIs and data sources for deal aggregation and content automation.
+            </li>
+
+            <li>
+              Improved product direction using analytics, user behavior insights, and conversion optimization.
+            </li>
+          </ul>
           <h3>PlasBit - Full Stack and Blockchain Developer <img src={plasbitLogo} alt="PlasBit Logo" className={styles.logoc} /></h3>
           <p>2025</p>
           <p className={styles.italic}>

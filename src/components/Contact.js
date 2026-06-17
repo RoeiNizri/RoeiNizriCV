@@ -31,10 +31,10 @@ function Contact() {
             text="Roei Nizri"
           />
           <ContactItem
-              href="mailto:founder@whatsnew.co.il"
+              href="mailto:roei@whatsnew.co.il"
             icon={faEnvelope}
             color="#D44638"
-              text="founder@whatsnew.co.il"
+              text="roei@whatsnew.co.il"
           />
           <ContactItem
             href="https://wa.me/972546945333"
